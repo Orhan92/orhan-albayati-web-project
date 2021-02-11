@@ -4,3 +4,4 @@
 - Structured folder and files in repository
 - Added HTML structure and linked my html to script(js) and styles(css)
 - Added "use strict"; to JavaScript file
+- Configured setup for coding
