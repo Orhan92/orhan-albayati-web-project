@@ -1,0 +1,18 @@
+{
+  "name": "orhan-albayati-web-project",
+  "version": "1.0.0",
+  "main": "src/up.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./bin/app.js",
+    "dev": "tsc --watch"
+  },
+  "repository": "https://github.com/Orhan92/orhan-albayati-web-project.git",
+  "author": "Warchiefen <70097003+Warchiefen@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^14.14.25",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.5"
+  }
+}
