@@ -1,5 +1,7 @@
 **2021-02-16** | **09:47**
 
+- Grid system added in grid.css file
+
 **2021-02-11** | **13:15**
 
 - Added necessary files (script, index and styles)
