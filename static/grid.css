@@ -9,7 +9,7 @@
 .col {
   display: block;
   float: left;
-  margin: 1% 0 1% 1.6%;
+  margin: 1% 0 1% 0.2%;
 }
 .col:first-child {
   margin-left: 0;
@@ -31,10 +31,12 @@
 /**************************************************************/
 /*  GRID OF TWO  */
 .span_2_of_2 {
-  width: 100%;
+  /* width: 95.5%; */
+  width: 80%;
 }
 .span_1_of_2 {
-  width: 49.2%;
+  /* width: 47.75%; */
+  width: 40%;
 }
 
 /*  GRID OF THREE  */
