@@ -8,11 +8,11 @@
 - Added som content inside the landing page
 - Heading almost done (bug with ul list responsitivity)
 
-**_Issues_**
+  **_Issues_**
 
-- Make the website responsive
+  - Make the website responsive
 
-  **2021-02-11** | **13:15**
+**2021-02-11** | **13:15**
 
 - Added necessary files (script, index and styles)
 - Structured folder and files in repository
