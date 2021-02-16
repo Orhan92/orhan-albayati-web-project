@@ -10,7 +10,7 @@
 
   **_Issues_**
 
-  - Make the website responsive
+  - Make the navigation bar responsive.
 
 **2021-02-11** | **13:15**
 
