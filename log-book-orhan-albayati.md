@@ -10,7 +10,7 @@
 
   **_Fixes_**
 
-- Fixed the navigation bar bug, it is now responsive.
+  - Fixed the navigation bar bug, it is now responsive.
 
 **2021-02-16** | **09:47**
 
