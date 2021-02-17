@@ -1,3 +1,17 @@
+**2021-02-17** | **09:30**
+
+- Completed the landing page
+- Added a registration section (form)
+- Added a login section
+- FIXED navigation bar bug. Nav works excellent now.
+- Added Media Querys to make the website responsive
+- Looks okay on all devices. It is possible to enhance responsitivity of the website, but for now I will leave it like it is.
+- Added normalize.css to reset build-in presets of different web browsers.
+
+**_Fixes_**
+
+- Fixed the navigation bar bug, it is now responsive.
+
 **2021-02-16** | **09:47**
 
 - Grid system added in grid.css file
