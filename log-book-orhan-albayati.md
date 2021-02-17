@@ -7,6 +7,7 @@
 - Added Media Querys to make the website responsive
 - Looks okay on all devices. It is possible to enhance responsitivity of the website, but for now I will leave it like it is.
 - Added normalize.css to reset build-in presets of different web browsers.
+- Removed my previous setup because it caused alot of problems with Oauth. Ill keep it basic and try to work this out in a simpler way.
 
   **_Fixes_**
 
