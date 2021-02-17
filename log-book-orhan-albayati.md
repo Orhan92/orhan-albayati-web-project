@@ -12,6 +12,8 @@
 
   - Fixed the navigation bar bug, it is now responsive.
 
+---
+
 **2021-02-16** | **09:47**
 
 - Grid system added in grid.css file
@@ -25,6 +27,8 @@
   **_Issues_**
 
   - Make the navigation bar responsive.
+
+---
 
 **2021-02-11** | **13:15**
 
