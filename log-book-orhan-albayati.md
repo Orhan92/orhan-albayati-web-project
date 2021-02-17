@@ -8,7 +8,7 @@
 - Looks okay on all devices. It is possible to enhance responsitivity of the website, but for now I will leave it like it is.
 - Added normalize.css to reset build-in presets of different web browsers.
 
-**_Fixes_**
+  **_Fixes_**
 
 - Fixed the navigation bar bug, it is now responsive.
 
