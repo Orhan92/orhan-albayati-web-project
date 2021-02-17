@@ -17,6 +17,9 @@
   **_Issues_**
 
   - Need to get the signout button once I've logged into google.
+  - Need to fix some kind of login page after the user logged in. In other words, redirect the user on the web application when authentication succeeds.
+  - Also have to add some more different login authenticators like facebook, OKTA or something else.
+  - Need to fix a "register section" (OPTIONAL)
 
 ---
 
