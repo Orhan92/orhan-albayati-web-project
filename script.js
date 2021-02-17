@@ -1,5 +1,5 @@
 "use strict";
-// GOOGLE SCRIPT
+// GOOGLE SCRIPT LOGIN START**********************
 function onSuccess(googleUser) {
   console.log("Logged in as: " + googleUser.getBasicProfile().getName());
 }
@@ -17,4 +17,4 @@ function renderButton() {
     onfailure: onFailure,
   });
 }
-//*******************************
+//GOOGLE SCRIPT LOGIN END************************
