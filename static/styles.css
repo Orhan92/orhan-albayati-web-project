@@ -204,10 +204,6 @@ span.psw a:active {
   outline: none;
 }
 
-.input-field:focus {
-  border: 1px solid dodgerblue;
-}
-
 /* Set a style for the submit button */
 .btn {
   background-color: dodgerblue;
