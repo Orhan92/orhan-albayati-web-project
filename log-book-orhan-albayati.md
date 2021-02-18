@@ -4,6 +4,7 @@
 - Removed test-index.html
 - Removed google login from the page and replaced it with my own former login / register section.
 - Created new issue to make login / register section work with a different kind of solution.
+- Linked nav buttons to correct .html file
 
 ---
 
