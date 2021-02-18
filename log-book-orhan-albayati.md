@@ -1,3 +1,12 @@
+**2021-02-18** | **11:50**
+
+- Added Media Querys to the box content p-elements
+- Removed test-index.html
+- Removed google login from the page and replaced it with my own former login / register section.
+- Created new issue to make login / register section work with a different kind of solution.
+
+---
+
 **2021-02-17** | **09:30**
 
 - Completed the landing page
