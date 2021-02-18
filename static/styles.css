@@ -214,3 +214,23 @@ ion-icon {
   height: 45px;
   width: 30px;
 }
+
+/***************ABOUT SECTION******************/
+/*Author Image*/
+#profile-img {
+  margin-top: 20px;
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
+#author-heading {
+  font-size: 150%;
+  font-weight: 500;
+}
+
+#author-container {
+  border-right: 2px solid #e67b3a;
+  box-shadow: 2px 0px 0px 0px #e67c3a98;
+  height: 95.5%;
+}

@@ -6,6 +6,7 @@
 - Created new issue to make login / register section work with a different kind of solution.
 - Linked nav buttons to correct .html file
 - Added Media Querys to About page.
+- Added Author image and some layout structure to About page.
 
 ---
 
