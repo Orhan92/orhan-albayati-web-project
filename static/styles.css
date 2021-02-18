@@ -121,12 +121,17 @@ input[type="password"] {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  outline: none;
   box-sizing: border-box;
+  border: none;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border: 1px solid #e67b3a;
 }
 
 button {
-  background-color: #4caf50;
+  background-color: #e67b3a;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -147,6 +152,17 @@ button:hover {
 span.psw {
   float: right;
   /* padding-top: 16px; */
+}
+span.psw a:link,
+span.psw a:visited {
+  text-decoration: none;
+  color: #c75006;
+}
+
+span.psw a:hover,
+span.psw a:active {
+  text-decoration: none;
+  color: #e67b3a;
 }
 
 /* Change styles for span button on extra small screens */
@@ -259,11 +275,6 @@ ion-icon {
     margin-top: 10%;
   }
 }
-/* @media screen and (max-width: 600px) {
-  #dev-info-heading {
-    margin-top: 0%;
-  }
-} */
 
 @media screen and (max-width: 540px) {
   #dev-info-heading {
@@ -309,3 +320,4 @@ ion-icon {
   letter-spacing: 2px;
   color: #505050;
 }
+/*END OF ABOUT SECTION**********************/
