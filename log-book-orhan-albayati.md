@@ -7,6 +7,7 @@
 - Linked nav buttons to correct .html file
 - Added Media Querys to About page.
 - Added Author image and some layout structure to About page.
+- Finished About Me section
 
 ---
 

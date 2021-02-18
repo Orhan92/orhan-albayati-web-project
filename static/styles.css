@@ -216,7 +216,7 @@ ion-icon {
 }
 
 /***************ABOUT SECTION******************/
-/*Author Image*/
+/*Author Image / Author info*/
 #profile-img {
   margin-top: 20px;
   width: 200px;
@@ -229,8 +229,83 @@ ion-icon {
   font-weight: 500;
 }
 
-#author-container {
+.author-container {
   border-right: 2px solid #e67b3a;
-  box-shadow: 2px 0px 0px 0px #e67c3a98;
+  box-shadow: 1.5px 0px 0px 0px #e67c3a98;
   height: 95.5%;
+  position: relative;
+}
+
+#dev-info-heading {
+  margin-top: 2%;
+  font-size: 140%;
+  font-weight: 600;
+  color: rgb(49, 49, 49);
+  text-shadow: 3px 3px 1px rgb(173, 173, 173);
+}
+
+@media screen and (max-width: 1160px) {
+  #dev-info-heading {
+    margin-top: 10%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #dev-info-heading {
+    margin-top: 10%;
+  }
+}
+@media screen and (max-width: 650px) {
+  #dev-info-heading {
+    margin-top: 10%;
+  }
+}
+/* @media screen and (max-width: 600px) {
+  #dev-info-heading {
+    margin-top: 0%;
+  }
+} */
+
+@media screen and (max-width: 540px) {
+  #dev-info-heading {
+    margin-top: 10%;
+  }
+}
+
+#author-list {
+  text-align: center;
+  /* margin-left: 10%; */
+  font-size: 80%;
+  list-style: none;
+  font-weight: 400;
+  color: #505050;
+}
+
+#author-list li {
+  margin-bottom: 3%;
+}
+#author-list li a {
+  text-decoration: none;
+  color: #c75006;
+}
+
+#author-list li a:link,
+#author-list li a:visited {
+  text-decoration: none;
+  color: #c75006;
+}
+
+#author-list li a:hover,
+#author-list li a:active {
+  text-decoration: none;
+  border-bottom: 2px solid #808080;
+  color: #e67b3a;
+}
+
+.author-interests {
+  border-top: 1px dotted #000;
+  margin: 0 25px;
+  margin-top: 40px;
+  font-size: 75%;
+  letter-spacing: 2px;
+  color: #505050;
 }
