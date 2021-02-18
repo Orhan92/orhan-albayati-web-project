@@ -123,7 +123,7 @@ input[type="password"] {
   display: inline-block;
   outline: none;
   box-sizing: border-box;
-  border: none;
+  /* border: none; */
 }
 input[type="text"]:focus,
 input[type="password"]:focus {
@@ -205,7 +205,7 @@ span.psw a:active {
 }
 
 .input-field:focus {
-  border: 2px solid dodgerblue;
+  border: 1px solid dodgerblue;
 }
 
 /* Set a style for the submit button */
