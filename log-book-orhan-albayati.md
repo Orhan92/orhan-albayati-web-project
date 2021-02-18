@@ -1,6 +1,6 @@
 **2021-02-18** | **11:50**
 
-- Added Media Querys to the box content p-elements
+- Added Media Querys to the box-content p-elements
 - Removed test-index.html
 - Removed google login from the page and replaced it with my own former login / register section.
 - Created new issue to make login / register section work with a different kind of solution.
@@ -8,6 +8,10 @@
 - Added Media Querys to About page.
 - Added Author image and some layout structure to About page.
 - Finished About Me section
+
+  **_Issues_**
+
+  - Make functions to login / register section.
 
 ---
 
