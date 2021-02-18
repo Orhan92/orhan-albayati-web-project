@@ -8,6 +8,11 @@
 - Added Media Querys to About page.
 - Added Author image and some layout structure to About page.
 - Finished About Me section
+- Every content is now responsive
+
+  **_Fixes_**
+
+  - Every element on the web application is now responsive
 
   **_Issues_**
 
