@@ -22,13 +22,9 @@
 
 /*ADD REGISTER FIELD INTO A JSON FILE*/
 const registerClick = document.querySelector(".btn");
-let formData;
 
 registerClick.addEventListener("click", function () {
   //FUNCTION HERE
-  alert("sending JSON");
-
-  formData = JSON.stringify($("#register-form").serializeArray());
 });
 
 //REGISTER
