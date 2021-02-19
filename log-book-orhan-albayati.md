@@ -3,8 +3,11 @@
 - Trying to solve register / login section
 - Added test data for login section
 - Made async fetch work on my users.json file. I can now print it in the console.
+- Also made it work to print out the username of a chosen object index (username, password, email).
+
   **_Issues_**
 
+  - Need to fix some kind of recognization on which member who logs in.
   - POST on register | GET on login
   - I have to figure out a way to print users.json in a txt friendly way.
 

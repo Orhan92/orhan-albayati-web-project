@@ -322,3 +322,9 @@ ion-icon {
   color: #505050;
 }
 /*END OF ABOUT SECTION**********************/
+
+/*LOGGED-IN.HTML SECTION*/
+#users {
+  text-align: center;
+  margin-top: 5%;
+}

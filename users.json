@@ -1,17 +1,17 @@
-{
-  "user1": {
+[
+  {
     "username": "Warchief",
     "email": "hej@hotmail.com",
-    "password": "123"
+    "password": "boss"
   },
-  "user2": {
+  {
     "username": "Orhan",
     "email": "oh@hotmail.com",
-    "password": "123"
+    "password": "king"
   },
-  "user3": {
+  {
     "username": "Hej",
     "email": "halloj@hotmail.com",
-    "password": "123"
+    "password": "queen"
   }
-}
+]
