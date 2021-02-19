@@ -1,6 +1,12 @@
 **2021-02-19** | **10:57**
 
-**2021-02-18** | **11:50**
+- Trying to solve register / login section
+
+  **_Issues_**
+
+  - POST on register | GET on login
+
+- **2021-02-18** | **11:50**
 
 - Added Media Querys to the box-content p-elements
 - Removed test-index.html
