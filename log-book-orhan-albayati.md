@@ -1,6 +1,7 @@
 **2021-02-19** | **10:57**
 
 - Trying to solve register / login section
+- Added test data for login section
 
   **_Issues_**
 
