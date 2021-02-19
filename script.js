@@ -1,4 +1,5 @@
 "use strict";
+
 // GOOGLE SCRIPT LOGIN START**********************
 // function onSuccess(googleUser) {
 //   console.log("Logged in as: " + googleUser.getBasicProfile().getName());
@@ -20,29 +21,22 @@
 //GOOGLE SCRIPT LOGIN END************************
 
 /*ADD REGISTER FIELD INTO A JSON FILE*/
-// $(document).ready(function () {
-//   $(".btn").click(function (e) {
-//     var jsonData = {};
+const registerClick = document.querySelector(".btn");
+let formData;
 
-//     var formData = $("#myform").serializeArray();
-//     // console.log(formData);
+registerClick.addEventListener("click", function () {
+  //FUNCTION HERE
+  alert("sending JSON");
 
-//     $.each(formData, function () {
-//       if (jsonData[this.name]) {
-//         if (!jsonData[this.name].push) {
-//           jsonData[this.name] = [jsonData[this.name]];
-//         }
-//         jsonData[this.name].push(this.value || "");
-//       } else {
-//         jsonData[this.name] = this.value || "";
-//       }
-//     });
-//     console.log(jsonData);
-//     $.ajax({
-//       url: "action.php",
-//       type: "POST",
-//       data: jsonData,
-//     });
-//     e.preventDefault();
-//   });
-// });
+  formData = JSON.stringify($("#register-form").serializeArray());
+});
+
+//REGISTER
+//Skapa en array som tar emot object "member".  (Gör den global i skriptet)
+//member objectet har 3 properties. username, email, password.
+//Om samma email eller samma username redan existerar så pushar vi inte in inputen till member objectet.
+
+//LOGIN
+//Vi loopar igenom arrayen som består av member object och ser om username matchar lösenordet till den usern.
+//Om så är fallet så redirectar vi använderen på hemsidan till logged-in.html
+//Om inte så skriver vi ut att vi inte hittar någon sådan användare i form av popup eller alert().
