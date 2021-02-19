@@ -2,10 +2,11 @@
 
 - Trying to solve register / login section
 - Added test data for login section
-
+- Made async fetch work on my users.json file. I can now print it in the console.
   **_Issues_**
 
   - POST on register | GET on login
+  - I have to figure out a way to print users.json in a txt friendly way.
 
 - **2021-02-18** | **11:50**
 
