@@ -104,6 +104,11 @@ nav img {
 }
 
 /**************LOGIN SECTION**************/
+.login-btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .login-label {
   padding: 82px 50px 2px 50px;
   text-align: center;
