@@ -9,6 +9,8 @@
 
   - So a user can register a member which will then be pushed into the accounts array based on the inputs inside the registration form. But the object (member) that is being pushed into the accounts array will dissappear once the page is reloaded/refreshed. I'm leaving this section for improvements!
 
+  - I also need to fix another problem with the register section where the user should not be allowed to register a username that already exists.
+
 **2021-02-19** | **10:57**
 
 - Trying to solve register / login section
