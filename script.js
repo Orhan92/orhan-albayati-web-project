@@ -66,6 +66,8 @@ registerButton.addEventListener("click", function (event) {
   if (inputRegPsw.value.length >= 6 && inputRegUser.value.length >= 3) {
     accounts.push(newActivity);
     console.log(accounts);
+    inputRegUser.value = ""; //resetting input boxes to default (empty)
+    inputRegPsw.value = ""; //resetting input boxes to default (empty)
   } else {
     alert(
       "Your Username or Password doesn't match the critera.\n(min username length: 3) AND (min password length: 6)"
