@@ -13,6 +13,14 @@
 
   - And the last problem is that I cannot get my h2 element inside of logged-in.html section to change the textContent to the members username.
 
+  **_COMMENTS_**
+
+  - We have a problem regarding the refresh state of the page. As JavaScript does not remember what happened before the page got refreshed we cannot solve this problem with plain javascript. Because JavaScript will read during "launch". In other word everytime we refresh the page, JavaScript will run its code. Therefore we cannot permanently store "newly pushed" values by the user inputs into the accounts array as they will dissappear once the page is reloaded and JavaScript re-reads the entire script.
+
+  **_SOLUTION_**
+
+  - A solution to the comments section above is to actually work with some kind of database. I would then store the user input during registration inside a database. And in there I would check for already existing usernames. If it already exists I would not be able to push the registration. But if the username is unique in this database I would push it. So, when we work with databases we could then tell JavaScript to read from it. This way we would have a solution to our problem and all the new registered members would permanently be there even if we refres or close/re-open the page again. SO FOR THIS PROJECT I MIGTH SKIP THIS PART WITH THE KNOWLEDGE OF HOW TO ACTUALLY FIND A SOLUTION TO THIS PROBLEM.
+
 **2021-02-19** | **10:57**
 
 - Trying to solve register / login section
