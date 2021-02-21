@@ -335,7 +335,7 @@ ion-icon {
   margin-top: 5%;
 }
 
-/*Transforms all input from user (only for Username) into lower to easier handle recognition of member*/
+/*Transforms all username inputs to lowercase letters*/
 #lowcaseLetterUserLogin {
   text-transform: lowercase;
 }
