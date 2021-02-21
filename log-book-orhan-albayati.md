@@ -2,6 +2,7 @@
 
 - Made login AND register section work. It requires alot of fixes and there are a few bugs (see issues log below).
 - Removed users.json file as I chose to work with arrays instead for this project.
+- Removed old out-commented google login script from JavaScript
 
   **_Issues_**
 
