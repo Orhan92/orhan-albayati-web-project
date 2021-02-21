@@ -11,6 +11,8 @@
 
   - I also need to fix another problem with the register section where the user should not be allowed to register a username that already exists.
 
+  - And the last problem is that I cannot get my h2 element inside of logged-in.html section to change the textContent to the members username.
+
 **2021-02-19** | **10:57**
 
 - Trying to solve register / login section
