@@ -1,3 +1,14 @@
+**2021-02-21** | **10:00**
+
+- Made login AND register section work. It requires alot of fixes and there are a few bugs (see issues log below).
+- Removed users.json file as I chose to work with arrays instead for this project.
+
+  **_Issues_**
+
+  - There are bugs regarding the register section. The user can register a new username and password with requirements. psw length >= 6, usr length >= 3. The major issue is that the user can only registrate during one session. Once the page refreshes, the user information that was registered will dissappear and we will only be left with the "hardcoded" members that exists in javascript code. (See account1, account2, account3, account4 and accounts array which contains all the other accounts).
+
+  - So a user can register a member which will then be pushed into the accounts array based on the inputs inside the registration form. But the object (member) that is being pushed into the accounts array will dissappear once the page is reloaded/refreshed. I'm leaving this section for improvements!
+
 **2021-02-19** | **10:57**
 
 - Trying to solve register / login section

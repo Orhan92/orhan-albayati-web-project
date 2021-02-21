@@ -19,9 +19,6 @@
 // }
 //GOOGLE SCRIPT LOGIN END************************
 
-//GLOBAL CONSTS
-const registerClick = document.querySelector(".btn");
-
 //REGISTER
 //Skapa en array som tar emot object "member".  (Gör den global i skriptet)
 //member objectet har 3 properties. username, email, password.
@@ -32,39 +29,81 @@ const registerClick = document.querySelector(".btn");
 // });
 
 //LOGIN
-//Vi loopar igenom arrayen som består av member object och ser om username matchar lösenordet till den usern.
-//Om så är fallet så redirectar vi använderen på hemsidan till logged-in.html
-//Om inte så skriver vi ut att vi inte hittar någon sådan användare i form av popup eller alert().
-// const loginClick = document.querySelector(".login-btn");
-// loginClick.addEventListener("click", function () {
-//   //FUNCTION HERE
-//   getText("users.json");
-//   async function getText(file) {
-//     let myObject = await fetch(file);
-//     let myJson = await myObject.json();
-//     document.getElementById("users").innerHTML = JSON.stringify(myJson);
-//   }
-// });
+//Starting members
+const account1 = {
+  username: "warchief",
+  password: "hejsan",
+};
 
-// getText("users.json");
-// async function getText(file) {
-//   let myObject = await fetch(file);
-//   let myJson = await myObject.json();
-//   document.getElementById("users").innerHTML = JSON.stringify(myJson);
-// }
+const account2 = {
+  username: "orhan",
+  password: "svejsan",
+};
 
-async function loadJSON(url) {
-  const res = await fetch(url);
-  return await res.json();
+const account3 = {
+  username: "mofasa",
+  password: "truckförare",
+};
+
+const account4 = {
+  username: "jafar",
+  password: "villhajasmine",
+};
+
+//Force username inputs to be lowercase on registration AND login
+function forceLower(strInput) {
+  strInput.value = strInput.value.toLowerCase();
 }
-loadJSON("users.json").then((data) => {
-  for (let i = 0; i < data.length; i++) {
-    let user = [];
-    user.push(data[i].username, data[i].password, data[i].email);
-    console.log(data[i].username + " | " + data[i].password);
-    console.log(user);
-    document.getElementById("users").textContent = JSON.stringify(
-      "Welcome" + " " + data[0].username
-    );
+
+let accounts = [account1, account2, account3, account4];
+
+const loginButton = document.querySelector(".login-btn");
+
+const inputLoginUser = document.querySelector(".login__input--user");
+const inputLoginPsw = document.querySelector(".login__input--psw");
+
+const labelWelcome = document.querySelector(".welcome");
+
+let currentAccount;
+
+//LOGIN FUNCTION
+loginButton.addEventListener("click", function (e) {
+  currentAccount = accounts.find(
+    (acc) => acc.username === inputLoginUser.value
+  );
+  //Optional chaining
+  if (currentAccount?.password === inputLoginPsw.value) {
+    console.log(currentAccount);
+    labelWelcome.textContent = `Welcome back, ${currentAccount.username}`;
+  } else {
+    //Prevent form from submitting
+    e.preventDefault();
+    alert("Wrong Username or Password.");
   }
 });
+
+//REGISTER A USER
+const registerButton = document.querySelector(".btn");
+
+const inputRegUser = document.querySelector(".input-field-user");
+const inputRegPsw = document.querySelector(".input-field-psw");
+
+let newActivity = {};
+registerButton.addEventListener("click", function (event) {
+  event.preventDefault();
+  newActivity = {};
+  var inputs = document.querySelectorAll(".reg__form input");
+  for (var i = 0; i < inputs.length; i++) {
+    newActivity[inputs[i].name] = inputs[i].value;
+  }
+  if (inputRegPsw.value.length >= 6 && inputRegUser.value.length >= 3) {
+    accounts.push(newActivity);
+    console.log(accounts);
+  } else {
+    alert(
+      "Your Username or Password doesn't match the critera.\n(min username length: 3) AND (min password length: 6)"
+    );
+    event.preventDefault();
+  }
+});
+console.log(accounts);

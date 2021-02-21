@@ -203,7 +203,13 @@ span.psw a:active {
 }
 
 /* Style the input fields */
-.input-field {
+.input-field-user {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field-psw {
   width: 100%;
   padding: 10px;
   outline: none;
@@ -324,7 +330,15 @@ ion-icon {
 /*END OF ABOUT SECTION**********************/
 
 /*LOGGED-IN.HTML SECTION*/
-#users {
+.welcome {
   text-align: center;
   margin-top: 5%;
+}
+
+/*Transforms all input from user (only for Username) into lower to easier handle recognition of member*/
+#lowcaseLetterUserLogin {
+  text-transform: lowercase;
+}
+#lowcaseLetterUserRegister {
+  text-transform: lowercase;
 }

@@ -71,25 +71,28 @@
     <div class="col span_1_of_2 border-box group">
       <h4 class="login-label"><strong>Sign in</strong> <br /></h4>
 
-      <form class="form-text" action="#" method="POST">
+      <form class="form-text"action="logged-in.html" method="GET">
         <div class="container">
           <label for="uname"><b>Username</b></label>
           <input
+            id="lowcaseLetterUserLogin"
             type="text"
             placeholder="Enter Username"
-            name="uname"
+            class="login__input--user"
+            onkeyup="return forceLower(this);"
             required
           />
 
           <label for="psw"><b>Password</b></label>
           <input
             type="password"
-            placeholder="Enter Password"
-            name="psw"
+            placeholder="enter Password"
+            minlength="6"
+            class="login__input--psw"
             required
           />
 
-          <button class="login-btn" type="submit" style="margin-bottom: 2%"><a href="logged-in.html">Login</a></button>
+          <button class="login-btn" type="submit" style="margin-bottom: 2%">Login</button>
           <label>
             <input type="checkbox" checked="checked" name="remember" />
             Remember me
@@ -105,29 +108,20 @@
         <strong>Registration</strong>
       </h4>
 
-      <form action="#" method="POST">
+      <form class="reg__form" action="#" method="POST">
         <div class="input-container">
           <i class="fa fa-user icon"
             ><ion-icon name="person-circle-outline"></ion-icon
           ></i>
+          <!--onkeyup function makes the username input to be lowercase-->
           <input
-            class="input-field"
+            id="lowcaseLetterUserRegister"
+            class="input-field-user"
             type="text"
-            placeholder="Username"
-            name="usrnm"
-            required
-          />
-        </div>
-        
-        <div class="input-container">
-          <i class="fa fa-envelope icon"
-            ><ion-icon name="mail-outline"></ion-icon
-          ></i>
-          <input
-            class="input-field"
-            type="text"
-            placeholder="Email"
-            name="email"
+            placeholder="username"
+            name="username"
+            minlength="3"
+            onkeyup="return forceLower(this);"
             required
           />
         </div>
@@ -135,10 +129,11 @@
           <div class="input-container">
            <i class="fa fa-key icon"><ion-icon name="key-outline"></ion-icon></i>
             <input
-            class="input-field"
+            class="input-field-psw"
             type="password"
-            placeholder="Password"
-            name="psw"
+            placeholder="password"
+            name="password"
+            minlength="6"
             required
            />
           </div>
