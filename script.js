@@ -46,6 +46,8 @@ loginButton.addEventListener("click", function (e) {
     //Prevent form from submitting
     e.preventDefault();
     alert("Wrong Username or Password.");
+    inputLoginUser.value = "";
+    inputLoginPsw.value = "";
   }
 });
 //*****************************************************************************/
@@ -68,6 +70,7 @@ registerButton.addEventListener("click", function (event) {
     console.log(accounts);
     inputRegUser.value = ""; //resetting input boxes to default (empty)
     inputRegPsw.value = ""; //resetting input boxes to default (empty)
+    alert("User added!");
   } else {
     alert(
       "Your Username or Password doesn't match the critera.\n(min username length: 3) AND (min password length: 6)"
