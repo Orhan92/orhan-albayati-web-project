@@ -22,6 +22,8 @@
 
   - A solution to the comments section above is to actually work with some kind of database. I would then store the user input during registration inside a database. And in there I would check for already existing usernames. If it already exists I would not be able to push the registration. But if the username is unique in this database I would push it. So, when we work with databases we could then tell JavaScript to read from it. This way we would have a solution to our problem and all the new registered members would permanently be there even if we refres or close/re-open the page again. SO FOR THIS PROJECT I MIGTH SKIP THIS PART WITH THE KNOWLEDGE OF HOW TO ACTUALLY FIND A SOLUTION TO THIS PROBLEM.
 
+---
+
 **2021-02-19** | **10:57**
 
 - Trying to solve register / login section
@@ -34,6 +36,8 @@
   - Need to fix some kind of recognization on which member who logs in.
   - POST on register | GET on login
   - I have to figure out a way to print users.json in a txt friendly way.
+
+---
 
 - **2021-02-18** | **11:50**
 
