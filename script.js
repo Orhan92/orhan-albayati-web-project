@@ -41,7 +41,7 @@ loginButton.addEventListener("click", function (e) {
   //Optional chaining (?.)
   if (currentAccount?.password === inputLoginPsw.value) {
     console.log(currentAccount);
-    labelWelcome.textContent = `Welcome back, ${currentAccount.username}`;
+    labelWelcome.textContent = `Welcome back, ${currentAccount.username}`; //labelWelcome does not change the text??? FIX THIS
   } else {
     //Prevent form from submitting
     e.preventDefault();

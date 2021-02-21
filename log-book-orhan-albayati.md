@@ -4,7 +4,7 @@
 - Removed users.json file as I chose to work with arrays instead for this project.
 - Removed old out-commented google login script from JavaScript
 
-  **_Issues_**
+  **_ISSUES_**
 
   - There are bugs regarding the register section. The user can register a new username and password with requirements. psw length >= 6, usr length >= 3. The major issue is that the user can only registrate during one session. Once the page refreshes, the user information that was registered will dissappear and we will only be left with the "hardcoded" members that exists in javascript code. (See account1, account2, account3, account4 and accounts array which contains all the other accounts).
 
@@ -31,7 +31,7 @@
 - Made async fetch work on my users.json file. I can now print it in the console.
 - Also made it work to print out the username of a chosen object index (username, password, email).
 
-  **_Issues_**
+  **_ISSUES_**
 
   - Need to fix some kind of recognization on which member who logs in.
   - POST on register | GET on login
@@ -51,11 +51,11 @@
 - Finished About Me section
 - Every content is now responsive
 
-  **_Fixes_**
+  **_FIXES_**
 
   - Every element on the web application is now responsive
 
-  **_Issues_**
+  **_ISSUES_**
 
   - Make functions to login / register section.
 
@@ -73,11 +73,11 @@
 - Removed my previous setup because it caused alot of problems with Oauth. Ill keep it basic and try to work this out in a simpler way.
 - Made google login work!
 
-  **_Fixes_**
+  **_FIXES_**
 
   - Fixed the navigation bar bug, it is now responsive.
 
-  **_Issues_**
+  **_ISSUES_**
 
   - Need to get the signout button once I've logged into google.
   - Need to fix some kind of login page after the user logged in. In other words, redirect the user on the web application when authentication succeeds.
@@ -96,7 +96,7 @@
 - Added som content inside the landing page
 - Heading almost done (bug with ul list responsitivity)
 
-  **_Issues_**
+  **_ISSUES_**
 
   - Make the navigation bar responsive.
 
