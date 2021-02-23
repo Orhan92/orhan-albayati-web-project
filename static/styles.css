@@ -12,7 +12,7 @@ body {
 
   /*Background image*/
   background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.85)),
-    url(/background.jpg);
+    url(/Images/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -122,12 +122,12 @@ nav img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-weight: 400;
+  font-weight: 350;
   font-size: 110%;
   padding: 20px 50px;
   text-align: center;
   word-spacing: 2px;
-  transition: ease-in 2s;
+  transition: ease-in 3s;
 }
 
 #logout {

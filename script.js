@@ -13,7 +13,7 @@ const oktaSignIn = new OktaSignIn({
 
 oktaSignIn.authClient.token.getUserInfo().then(
   function (user) {
-    document.getElementById("messageBox").innerHTML = user.email;
+    document.getElementById("messageBox").innerHTML = "Dad says..."; //user.email; /change to this to view signed in email
     document.getElementById("logout").style.display = "block"; //Logout button
     document.getElementById("lgn-btn-container").style.display = "flex";
     document.getElementById("psw-disclaimer").style.display = "none";
@@ -28,7 +28,7 @@ oktaSignIn.authClient.token.getUserInfo().then(
         oktaSignIn.remove();
 
         const idToken = tokens.idToken;
-        document.getElementById("messageBox").innerHTML = idToken.claims.email;
+        document.getElementById("messageBox").innerHTML = "Welcome member!"; //idToken.claims.email; /change to this to view signed in email
         document.getElementById("logout").style.display = "block";
         document.getElementById("lgn-btn-container").style.display = "flex";
         document.getElementById("psw-disclaimer").style.display = "none";
@@ -52,6 +52,7 @@ const data = null;
 const xhr = new XMLHttpRequest();
 xhr.withCredentials = true;
 
+/*Change this part so that the user can press on a "Generate" button to generate a joke */
 xhr.addEventListener("readystatechange", function () {
   if (this.readyState === this.DONE) {
     console.log(this.responseText);
@@ -68,6 +69,7 @@ xhr.setRequestHeader(
 xhr.setRequestHeader("x-rapidapi-host", "joke3.p.rapidapi.com");
 
 xhr.send(data);
+
 /******************************************* */
 
 // fetch("https://joke3.p.rapidapi.com/v1/joke", {
