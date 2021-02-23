@@ -55,7 +55,8 @@ xhr.withCredentials = true;
 xhr.addEventListener("readystatechange", function () {
   if (this.readyState === this.DONE) {
     console.log(this.responseText);
-    document.getElementById("jokes").innerHTML = this.responseText;
+    let myJSON = JSON.parse(this.responseText);
+    document.getElementById("jokes").innerHTML = myJSON.content; // myJSON.upvotes + " | " + myJSON.downvotes;
   }
 });
 

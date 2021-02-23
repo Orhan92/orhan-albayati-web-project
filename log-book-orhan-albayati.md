@@ -6,7 +6,7 @@
 - Moved pictures out of folder because they couldn't be read on GitHub pages. It now works properly.
 - Cleaned up css files and moved media queries into an separate css file (media-querys.css)
 - Added customized css to okta login widget.
-- Called an web API but the formatting of the outcome is not the way I want it. It is right now in an object array format. I want to print one or a few of those properties. How?
+- Called an web API and I fixed formatting to only show content (the joke)
 
   **_ISSUES/TO-DO_**
 
