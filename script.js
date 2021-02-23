@@ -44,5 +44,4 @@ function logout() {
   oktaSignIn.authClient.signOut();
   location.reload();
 }
-
 /*END OF OKTA LOGIN SCRIPT*/

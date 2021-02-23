@@ -9,6 +9,7 @@
 
   **_ISSUES/TO-DO_**
 
+  - Once the user logs in I want the content to show user first- and lastname. I can only fix it to show user email.
   - I need to get API to the login section. This is what is left to do on this project.
 
 **2021-02-21** | **10:00**
