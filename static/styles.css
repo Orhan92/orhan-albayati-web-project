@@ -60,11 +60,6 @@ nav img {
   border-bottom: 2px solid #e67b3a;
   color: #000;
 }
-@media screen and (max-width: 900px) {
-  .main-nav {
-    width: 40%;
-  }
-}
 
 /*Landing Page - Content*/
 /*---------RE-USABLE COMPONENTS---------*/
@@ -81,6 +76,7 @@ nav img {
   box-shadow: 1px 0px 5px 0px #e67b3a;
   letter-spacing: 1px;
 }
+
 /*Right borderbox on landing page*/
 .border-box1 {
   background-color: rgb(240, 240, 240);
@@ -107,18 +103,8 @@ nav img {
   text-align: center;
   word-spacing: 2px;
 }
-@media only screen and (max-width: 480px) {
-  .border-box-content {
-    font-size: 80%;
-  }
-}
-@media only screen and (max-width: 1050px) {
-  .border-box-content {
-    font-size: 60%;
-  }
-}
 
-/*OKTA SIGN IN STYLING*/
+/*OKTA SIGN IN STYLING****************************************/
 .okta-sign-in-header {
   display: none;
 }
@@ -149,6 +135,7 @@ nav img {
   font-size: 70%;
   letter-spacing: 2px;
 }
+/*END OF OKTA STYLING***********************************************/
 
 /***************ABOUT SECTION******************/
 /*Author Image / Author info*/
@@ -217,9 +204,3 @@ nav img {
   color: #505050;
 }
 /*END OF ABOUT SECTION**********************/
-
-/*LOGGED-IN.HTML SECTION*/
-.welcome {
-  text-align: center;
-  margin-top: 5%;
-}

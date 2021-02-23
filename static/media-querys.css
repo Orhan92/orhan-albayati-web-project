@@ -1,3 +1,10 @@
+/*NAVIGATION QUERYS*/
+@media screen and (max-width: 900px) {
+  .main-nav {
+    width: 40%;
+  }
+}
+
 /*QUERYS FOR ABOUT ME PAGE*/
 @media screen and (max-width: 1160px) {
   #dev-info-heading {
@@ -18,5 +25,17 @@
 @media screen and (max-width: 540px) {
   #dev-info-heading {
     margin-top: 10%;
+  }
+}
+
+/*QUERYS FOR BOX CONTENTS ON LANDING PAGE (LEFT BOX)*/
+@media only screen and (max-width: 480px) {
+  .border-box-content {
+    font-size: 80%;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .border-box-content {
+    font-size: 60%;
   }
 }
