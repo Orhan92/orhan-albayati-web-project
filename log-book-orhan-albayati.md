@@ -1,3 +1,16 @@
+**2021-02-23** | **09:00**
+
+- REMOVED old signup/login section and replaced with OKTA.
+- FIXED OKTA. OKTA now works properly and the user can sign in with OKTA.
+- User email that signed in is shown once the user signs in
+- Moved pictures out of folder because they couldn't be read on GitHub pages. It now works properly.
+- Cleaned up css files and moved media queries into an separate css file (media-querys.css)
+- Added customized css to okta login widget.
+
+  **_ISSUES/TO-DO_**
+
+  - I need to get API to the login section. This is what is left to do on this project.
+
 **2021-02-21** | **10:00**
 
 - Made login AND register section work. It requires alot of fixes and there are a few bugs (see issues log below).
