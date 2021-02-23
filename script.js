@@ -7,7 +7,8 @@ const oktaSignIn = new OktaSignIn({
   authParams: {
     issuer: "https://dev-30200724.okta.com/oauth2/default",
   },
-  redirectUri: "http://127.0.0.1:8080/index.html",
+  redirectUri:
+    "https://orhan92.github.io/orhan-albayati-web-project/" /*http://127.0.0.1:8080/index.html*/ /*Change to this for local login*/,
 });
 
 oktaSignIn.authClient.token.getUserInfo().then(
