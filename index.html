@@ -43,9 +43,6 @@
       <ul class="main-nav group">
         <li><a href="index.html">Start</a></li>
         <li><a href="about.html">About</a></li>
-        <li>
-          <a href="" id="logout" onclick="logout()">Logout</a>
-        </li>
       </ul>
     </nav>
     <!--END OF NAVIGATION SECTION-->
@@ -83,18 +80,34 @@
     <!--END OF WELCOME SECTION-->
 
     <!--OKTA LOGIN SECTION-->
-    <div class="col span_1_of_2 border-box group">
-      <h1 class="text-center">Login</h1>
-      <!-- where the sign-in form will be displayed -->
-      <div id="okta-login-container"></div>
-      <!-- <button
-        id="logout"
-        class="button"
-        onclick="logout()"
-        style="display: none"
-      >
-        Logout
-      </button> -->
+    <div class="col span_1_of_2 border-box1 group">
+      <div class="container">
+        <div id="messageBox" class="jumbotron"></div>
+        <!-- where the sign-in form will be displayed -->
+        <div id="okta-login-container"></div>
+        <div id="lgn-btn-container" style="display: none">
+          <button
+            id="logout"
+            class="button"
+            onclick="logout()"
+            style="display: none"
+          >
+            Logout
+          </button>
+        </div>
+      </div>
+
+      <p class="text-center" id="psw-disclaimer">
+        Your Personal Data will be Process only for the minimum period necessary
+        for the purposes set out in this Policy. The criteria for determining
+        the duration for which we will keep your Personal Data are as follows:
+        we will retain copies of your Personal Data in a form that permits
+        identification only for as long as is necessary in connection with the
+        purposes set out in this Policy, unless applicable laws require a longer
+        retention period. In particular, we may retain your Personal Data for
+        the duration of any period necessary to establish, exercise or defend
+        any legal rights.
+      </p>
     </div>
     <!--END OF OKTA LOGIN SECTION-->
 

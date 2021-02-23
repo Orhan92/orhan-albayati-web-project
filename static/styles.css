@@ -11,7 +11,7 @@ body {
   height: 100vh;
 
   /*Background image*/
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.85)),
     url(/images/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -68,6 +68,8 @@ nav img {
 
 /*Landing Page - Content*/
 /*---------RE-USABLE COMPONENTS---------*/
+
+/*Left borderbox on landing page*/
 .border-box {
   background-color: rgb(240, 240, 240);
   height: 80vh;
@@ -79,6 +81,19 @@ nav img {
   box-shadow: 1px 0px 5px 0px #e67b3a;
   letter-spacing: 1px;
 }
+/*Right borderbox on landing page*/
+.border-box1 {
+  background-color: rgb(240, 240, 240);
+  height: 80vh;
+  color: rgb(26, 26, 26);
+  margin-top: 7%;
+  opacity: 0.9;
+  overflow-y: none;
+  border-radius: 15px;
+  box-shadow: 1px 0px 5px 0px #e67b3a; /*Comment back to get orange border*/
+  letter-spacing: 1px;
+}
+
 .border-box h1 {
   text-align: center;
   font-style: italic;
@@ -104,9 +119,36 @@ nav img {
 }
 
 /*OKTA SIGN IN STYLING*/
-/* #logout {
+.okta-sign-in-header {
   display: none;
-} */
+}
+
+#lgn-btn-container {
+  height: 65vh;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#logout {
+  width: 20%;
+  font-weight: 400;
+}
+
+#messageBox {
+  margin-top: 6%;
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  margin: 4% 10%;
+  font-weight: 340;
+  font-style: italic;
+  font-size: 70%;
+  letter-spacing: 2px;
+}
 
 /***************ABOUT SECTION******************/
 /*Author Image / Author info*/
@@ -137,31 +179,8 @@ nav img {
   text-shadow: 3px 3px 1px rgb(173, 173, 173);
 }
 
-@media screen and (max-width: 1160px) {
-  #dev-info-heading {
-    margin-top: 10%;
-  }
-}
-@media screen and (max-width: 1000px) {
-  #dev-info-heading {
-    margin-top: 10%;
-  }
-}
-@media screen and (max-width: 650px) {
-  #dev-info-heading {
-    margin-top: 10%;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  #dev-info-heading {
-    margin-top: 10%;
-  }
-}
-
 #author-list {
   text-align: center;
-  /* margin-left: 10%; */
   font-size: 80%;
   list-style: none;
   font-weight: 400;
@@ -203,12 +222,4 @@ nav img {
 .welcome {
   text-align: center;
   margin-top: 5%;
-}
-
-/*Transforms all username inputs to lowercase letters*/
-#lowcaseLetterUserLogin {
-  text-transform: lowercase;
-}
-#lowcaseLetterUserRegister {
-  text-transform: lowercase;
 }

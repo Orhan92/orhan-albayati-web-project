@@ -1,0 +1,22 @@
+/*QUERYS FOR ABOUT ME PAGE*/
+@media screen and (max-width: 1160px) {
+  #dev-info-heading {
+    margin-top: 10%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #dev-info-heading {
+    margin-top: 10%;
+  }
+}
+@media screen and (max-width: 650px) {
+  #dev-info-heading {
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #dev-info-heading {
+    margin-top: 10%;
+  }
+}

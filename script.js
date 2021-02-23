@@ -12,9 +12,10 @@ const oktaSignIn = new OktaSignIn({
 
 oktaSignIn.authClient.token.getUserInfo().then(
   function (user) {
-    document.getElementById("messageBox").innerHTML =
-      "Hello, " + user.email + "! You are *still* logged in! :)";
+    document.getElementById("messageBox").innerHTML = "Welcome: " + user.email;
     document.getElementById("logout").style.display = "block"; //Logout button
+    document.getElementById("lgn-btn-container").style.display = "flex";
+    document.getElementById("psw-disclaimer").style.display = "none";
   },
   function (error) {
     oktaSignIn
@@ -27,8 +28,10 @@ oktaSignIn.authClient.token.getUserInfo().then(
 
         const idToken = tokens.idToken;
         document.getElementById("messageBox").innerHTML =
-          "Hello, " + idToken.claims.email + "! You just logged in! :)";
+          "Welcome: " + idToken.claims.email;
         document.getElementById("logout").style.display = "block";
+        document.getElementById("lgn-btn-container").style.display = "flex";
+        document.getElementById("psw-disclaimer").style.display = "none";
       })
       .catch(function (err) {
         console.error(err);
@@ -37,7 +40,9 @@ oktaSignIn.authClient.token.getUserInfo().then(
 );
 
 function logout() {
+  document.getElementById("logout").style.display = "block";
   oktaSignIn.authClient.signOut();
   location.reload();
 }
+
 /*END OF OKTA LOGIN SCRIPT*/
