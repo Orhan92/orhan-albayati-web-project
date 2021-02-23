@@ -6,11 +6,11 @@
 - Moved pictures out of folder because they couldn't be read on GitHub pages. It now works properly.
 - Cleaned up css files and moved media queries into an separate css file (media-querys.css)
 - Added customized css to okta login widget.
+- Called an web API but the formatting of the outcome is not the way I want it. It is right now in an object array format. I want to print one or a few of those properties. How?
 
   **_ISSUES/TO-DO_**
 
   - Once the user logs in I want the content to show user first- and lastname. I can only fix it to show user email.
-  - I need to get API to the login section. This is what is left to do on this project.
   - I can't figure out why my background image doesn't show on GitHub Pages.
 
 **2021-02-21** | **10:00**

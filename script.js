@@ -8,7 +8,7 @@ const oktaSignIn = new OktaSignIn({
     issuer: "https://dev-30200724.okta.com/oauth2/default",
   },
   redirectUri:
-    "https://orhan92.github.io/orhan-albayati-web-project/" /*http://127.0.0.1:8080/index.html*/ /*Change to this for local login*/,
+    "http://127.0.0.1:8080/index.html" /*https://orhan92.github.io/orhan-albayati-web-project/*/ /*Change to this for Pages login*/,
 });
 
 oktaSignIn.authClient.token.getUserInfo().then(
@@ -45,3 +45,41 @@ function logout() {
   location.reload();
 }
 /*END OF OKTA LOGIN SCRIPT*/
+
+/*JOKES*/
+const data = null;
+
+const xhr = new XMLHttpRequest();
+xhr.withCredentials = true;
+
+xhr.addEventListener("readystatechange", function () {
+  if (this.readyState === this.DONE) {
+    console.log(this.responseText);
+    document.getElementById("jokes").innerHTML = this.responseText;
+  }
+});
+
+xhr.open("GET", "https://joke3.p.rapidapi.com/v1/joke");
+xhr.setRequestHeader(
+  "x-rapidapi-key",
+  "438ce6f496msh1291cc6153e5c5ap10502bjsn062ad0fe3176"
+);
+xhr.setRequestHeader("x-rapidapi-host", "joke3.p.rapidapi.com");
+
+xhr.send(data);
+/******************************************* */
+
+// fetch("https://joke3.p.rapidapi.com/v1/joke", {
+//   method: "GET",
+//   headers: {
+//     "x-rapidapi-key": "438ce6f496msh1291cc6153e5c5ap10502bjsn062ad0fe3176",
+//     "x-rapidapi-host": "joke3.p.rapidapi.com",
+//   },
+// })
+//   .then((response) => {
+//     console.log(response);
+//   })
+//   .catch((err) => {
+//     console.error(err);
+//   });
+//

@@ -117,6 +117,13 @@ nav img {
   align-items: center;
 }
 
+#jokes {
+  height: 50vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #logout {
   width: 20%;
   font-weight: 400;
