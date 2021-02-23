@@ -13,10 +13,12 @@ const oktaSignIn = new OktaSignIn({
 
 oktaSignIn.authClient.token.getUserInfo().then(
   function (user) {
-    document.getElementById("messageBox").innerHTML = "Dad says..."; //user.email; /change to this to view signed in email
+    document.getElementById("messageBox").innerHTML =
+      user.userData.profile.name;
     document.getElementById("logout").style.display = "block"; //Logout button
     document.getElementById("lgn-btn-container").style.display = "flex";
     document.getElementById("psw-disclaimer").style.display = "none";
+    document.getElementById("joke-btn").style.display = "block";
   },
   function (error) {
     oktaSignIn
@@ -27,11 +29,12 @@ oktaSignIn.authClient.token.getUserInfo().then(
         oktaSignIn.authClient.tokenManager.setTokens(tokens);
         oktaSignIn.remove();
 
-        const idToken = tokens.idToken;
-        document.getElementById("messageBox").innerHTML = "Welcome member!"; //idToken.claims.email; /change to this to view signed in email
+        // const idToken = tokens.idToken; //This one is used to print out email token.
+        document.getElementById("messageBox").innerHTML = "Welcome member!";
         document.getElementById("logout").style.display = "block";
         document.getElementById("lgn-btn-container").style.display = "flex";
         document.getElementById("psw-disclaimer").style.display = "none";
+        document.getElementById("joke-btn").style.display = "block";
       })
       .catch(function (err) {
         console.error(err);
@@ -52,12 +55,15 @@ const data = null;
 const xhr = new XMLHttpRequest();
 xhr.withCredentials = true;
 
-/*Change this part so that the user can press on a "Generate" button to generate a joke */
 xhr.addEventListener("readystatechange", function () {
   if (this.readyState === this.DONE) {
     console.log(this.responseText);
     let myJSON = JSON.parse(this.responseText);
-    document.getElementById("jokes").innerHTML = myJSON.content; // myJSON.upvotes + " | " + myJSON.downvotes;
+
+    /* FIX THIS FUNCTION TO ACTUALLY GENERATE A NEW JOKE EACH CLICK*/
+    document.getElementById("joke-btn").addEventListener("click", function () {
+      document.getElementById("jokes").innerHTML = myJSON.content;
+    });
   }
 });
 
@@ -71,18 +77,3 @@ xhr.setRequestHeader("x-rapidapi-host", "joke3.p.rapidapi.com");
 xhr.send(data);
 
 /******************************************* */
-
-// fetch("https://joke3.p.rapidapi.com/v1/joke", {
-//   method: "GET",
-//   headers: {
-//     "x-rapidapi-key": "438ce6f496msh1291cc6153e5c5ap10502bjsn062ad0fe3176",
-//     "x-rapidapi-host": "joke3.p.rapidapi.com",
-//   },
-// })
-//   .then((response) => {
-//     console.log(response);
-//   })
-//   .catch((err) => {
-//     console.error(err);
-//   });
-//
