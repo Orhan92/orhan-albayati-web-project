@@ -88,6 +88,7 @@ nav img {
   border-radius: 15px;
   box-shadow: 1px 0px 5px 0px #e67b3a; /*Comment back to get orange border*/
   letter-spacing: 1px;
+  overflow-y: auto;
 }
 
 .border-box h1 {
@@ -119,6 +120,25 @@ nav img {
 #logout {
   width: 20%;
   font-weight: 400;
+}
+
+.button {
+  color: #fff;
+  background-color: #007dc1;
+  font-size: 90%;
+  text-align: center;
+  padding-bottom: 3px;
+}
+
+.button:link,
+.button:visited {
+  color: #fff;
+  background-color: #0073b2;
+}
+.button:hover,
+.button:active {
+  color: #fff;
+  background-color: #0073b2;
 }
 
 #messageBox {

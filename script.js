@@ -12,7 +12,7 @@ const oktaSignIn = new OktaSignIn({
 
 oktaSignIn.authClient.token.getUserInfo().then(
   function (user) {
-    document.getElementById("messageBox").innerHTML = "Welcome: " + user.email;
+    document.getElementById("messageBox").innerHTML = user.email;
     document.getElementById("logout").style.display = "block"; //Logout button
     document.getElementById("lgn-btn-container").style.display = "flex";
     document.getElementById("psw-disclaimer").style.display = "none";
@@ -27,8 +27,7 @@ oktaSignIn.authClient.token.getUserInfo().then(
         oktaSignIn.remove();
 
         const idToken = tokens.idToken;
-        document.getElementById("messageBox").innerHTML =
-          "Welcome: " + idToken.claims.email;
+        document.getElementById("messageBox").innerHTML = idToken.claims.email;
         document.getElementById("logout").style.display = "block";
         document.getElementById("lgn-btn-container").style.display = "flex";
         document.getElementById("psw-disclaimer").style.display = "none";
