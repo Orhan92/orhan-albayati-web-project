@@ -8,6 +8,7 @@
 - Added customized css to okta login widget.
 - Called an web API and I fixed formatting to only show content (the joke)
 - Added a generate button for my API
+- Made the generate (Click me!) button to actually generate a new joke every click!
 
   **_ISSUES/TO-DO_**
 

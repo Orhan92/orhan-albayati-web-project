@@ -30,7 +30,7 @@ oktaSignIn.authClient.token.getUserInfo().then(
         oktaSignIn.remove();
 
         // const idToken = tokens.idToken; //This one is used to print out email token.
-        document.getElementById("messageBox").innerHTML = "Welcome member!";
+        document.getElementById("messageBox").innerHTML = "Welcome!";
         document.getElementById("logout").style.display = "block";
         document.getElementById("lgn-btn-container").style.display = "flex";
         document.getElementById("psw-disclaimer").style.display = "none";
@@ -49,7 +49,7 @@ function logout() {
 }
 /*END OF OKTA LOGIN SCRIPT*/
 
-/*JOKES*/
+/*JOKES Generator And GET API*/
 document.getElementById("joke-btn").addEventListener("click", function () {
   const data = null;
   const xhr = new XMLHttpRequest();
