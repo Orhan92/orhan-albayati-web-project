@@ -3,5 +3,5 @@ This is the final project in the course Web Development Frontend on the .NET Dev
 
 Site hosted on GitHub pages: https://orhan92.github.io/orhan-albayati-web-project/
 
-Username: jafar.agraba@aladdin.com
-password: frontend123
+- Username: jafar.agraba@aladdin.com
+- Password: frontend123
