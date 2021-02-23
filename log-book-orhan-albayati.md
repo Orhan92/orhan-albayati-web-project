@@ -7,6 +7,7 @@
 - Cleaned up css files and moved media queries into an separate css file (media-querys.css)
 - Added customized css to okta login widget.
 - Called an web API and I fixed formatting to only show content (the joke)
+- Added a generate button for my API
 
   **_ISSUES/TO-DO_**
 
