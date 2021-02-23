@@ -50,30 +50,28 @@ function logout() {
 /*END OF OKTA LOGIN SCRIPT*/
 
 /*JOKES*/
-const data = null;
+document.getElementById("joke-btn").addEventListener("click", function () {
+  const data = null;
+  const xhr = new XMLHttpRequest();
+  xhr.withCredentials = true;
 
-const xhr = new XMLHttpRequest();
-xhr.withCredentials = true;
+  xhr.open("GET", "https://joke3.p.rapidapi.com/v1/joke");
+  xhr.setRequestHeader(
+    "x-rapidapi-key",
+    "438ce6f496msh1291cc6153e5c5ap10502bjsn062ad0fe3176"
+  );
+  xhr.setRequestHeader("x-rapidapi-host", "joke3.p.rapidapi.com");
 
-xhr.addEventListener("readystatechange", function () {
-  if (this.readyState === this.DONE) {
-    console.log(this.responseText);
-    let myJSON = JSON.parse(this.responseText);
+  xhr.send(data);
 
-    /* FIX THIS FUNCTION TO ACTUALLY GENERATE A NEW JOKE EACH CLICK*/
-    document.getElementById("joke-btn").addEventListener("click", function () {
+  xhr.addEventListener("readystatechange", function () {
+    if (this.readyState === this.DONE) {
+      console.log(this.responseText);
+      let myJSON = JSON.parse(this.responseText);
+
+      /* FIX THIS FUNCTION TO ACTUALLY GENERATE A NEW JOKE EACH CLICK*/
       document.getElementById("jokes").innerHTML = myJSON.content;
-    });
-  }
+    }
+  });
 });
-
-xhr.open("GET", "https://joke3.p.rapidapi.com/v1/joke");
-xhr.setRequestHeader(
-  "x-rapidapi-key",
-  "438ce6f496msh1291cc6153e5c5ap10502bjsn062ad0fe3176"
-);
-xhr.setRequestHeader("x-rapidapi-host", "joke3.p.rapidapi.com");
-
-xhr.send(data);
-
 /******************************************* */
