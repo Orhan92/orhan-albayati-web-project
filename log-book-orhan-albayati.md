@@ -11,6 +11,7 @@
 
   - Once the user logs in I want the content to show user first- and lastname. I can only fix it to show user email.
   - I need to get API to the login section. This is what is left to do on this project.
+  - I can't figure out why my background image doesn't show on GitHub Pages.
 
 **2021-02-21** | **10:00**
 
