@@ -104,7 +104,7 @@ nav img {
 }
 
 /**************LOGIN SECTION**************/
-.login-btn a {
+/* .login-btn a {
   text-decoration: none;
   color: #fff;
 }
@@ -128,7 +128,7 @@ input[type="password"] {
   display: inline-block;
   outline: none;
   box-sizing: border-box;
-  /* border: none; */
+
 }
 input[type="text"]:focus,
 input[type="password"]:focus {
@@ -150,13 +150,11 @@ button:hover {
 }
 
 .container {
-  /* padding: 16px; */
   padding: 0 15%;
 }
 
 span.psw {
   float: right;
-  /* padding-top: 16px; */
 }
 span.psw a:link,
 span.psw a:visited {
@@ -170,29 +168,26 @@ span.psw a:active {
   color: #e67b3a;
 }
 
-/* Change styles for span button on extra small screens */
 @media screen and (max-width: 300px) {
   span.psw {
     display: block;
     float: none;
   }
-}
+} */
 
 /**************REGISTER SECTION***************/
-.reg-label {
+/* .reg-label {
   padding: 42px 50px 2px 50px;
   text-align: center;
   font-weight: 300;
 }
 
-/* Style the input container */
 .input-container {
   display: flex;
   width: 85%;
   margin-bottom: 5px;
 }
 
-/* Style the form icons */
 .icon {
   margin-left: 17%;
   padding: 5px;
@@ -202,7 +197,6 @@ span.psw a:active {
   text-align: center;
 }
 
-/* Style the input fields */
 .input-field-user {
   width: 100%;
   padding: 10px;
@@ -215,7 +209,6 @@ span.psw a:active {
   outline: none;
 }
 
-/* Set a style for the submit button */
 .btn {
   background-color: dodgerblue;
   color: white;
@@ -232,11 +225,10 @@ span.psw a:active {
   opacity: 1;
 }
 
-/*Icon formatting*/
 ion-icon {
   height: 45px;
   width: 30px;
-}
+} */
 
 /***************ABOUT SECTION******************/
 /*Author Image / Author info*/
