@@ -3,9 +3,11 @@
 - Now I'm going to wrap up the last parts (see projects/issues on GitHub for more info).
 
 **_BRIEF_**
--There have been quite a few changes in this project so far. It all started with a specifikation of making a first draft of a website where there should be a landing page, a navigation bar with: "Start", "About", and "Login" button. Once the user logs in, the user should be able to see an API call on the website. So far so good. I should also add that It wasnt any problem to have the Login / logout section in the navbar, but I chose to have those buttons outside of it.
--I have done all these steps by now.
--Going to make some changes regarding page theme, and also add a few more features to the website.
+
+- There have been quite a few changes in this project so far. It all started with a specifikation of making a first draft of a website where there should be a landing page, a navigation bar with: "Start", "About", and "Login" button. Once the user logs in, the user should be able to see an API call on the website. So far so good. I should also add that It wasnt any problem to have the Login / logout section in the navbar, but I chose to have those buttons outside of it.
+- I have done all these steps by now.
+- Going to make some changes regarding page theme, and also add a few more features to the website.
+- I Have already hosted this website on GitHub Pages, OKTA signin included. But there was alot of bugs there (like background image not being read), so I decided to keep my webpage local for now.
 
 **_LAST SESSION_**
 
