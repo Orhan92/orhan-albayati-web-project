@@ -97,8 +97,8 @@ jokeBtn.addEventListener("click", function () {
           "meme6.jpg",
           "meme7.jpg"
         );
-        let memeIndex = 0;
 
+        let memeIndex = 0;
         if (memeArr.length > 1) {
           while (memeIndex === lastIndex) {
             memeIndex = Math.floor(Math.random() * memeArr.length);
@@ -112,5 +112,7 @@ jokeBtn.addEventListener("click", function () {
       }
     }
   });
+
+  //Thumbs up / thumbs down
 });
 /******************************************* */

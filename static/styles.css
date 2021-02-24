@@ -207,7 +207,7 @@ nav img {
 #thumbs-down {
   display: inline-block;
   outline: none;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
   border: none;
   border-radius: 10%;
 }
@@ -240,11 +240,30 @@ nav img {
   position: relative;
   margin-bottom: 2%;
 }
+
 #meme {
   height: 200px;
   width: auto;
   position: relative;
   padding-bottom: 35px;
+  animation: meme 1.5s ease-in-out;
+}
+@keyframes meme {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /*END OF API SECTION*******************************/
 
