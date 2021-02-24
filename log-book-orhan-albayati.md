@@ -2,6 +2,7 @@
 
 - Now I'm going to wrap up the last parts (see projects/issues on GitHub for more info).
 - Added upvote and downvote joke and a counter to them with a blue color just to not confuse red and green to colorblind people
+- Added random image generator based on click. The images are randomized from dir: Memes/
 
 **_BRIEF_**
 
