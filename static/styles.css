@@ -233,6 +233,15 @@ nav img {
   color: #007dc1;
 }
 
+.vote-container {
+  height: 25vh;
+}
+#meme {
+  height: 140px;
+  width: auto;
+  transition: ease-in-out 1s;
+}
+
 /*END OF API SECTION*******************************/
 
 /***************ABOUT SECTION******************/
