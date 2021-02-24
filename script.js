@@ -1,14 +1,6 @@
 "use strict";
 
 /*OKTA LOGIN SCRIPT*/
-/*storing elements that will be used multiple times in a varaible*/
-const jokeBtn = document.getElementById("joke-btn");
-const logoutBtn = document.getElementById("logout");
-const disclaimer = document.getElementById("psw-disclaimer");
-const loginBtnContainer = document.getElementById("lgn-btn-container");
-const welcomeMessage = document.getElementById("messageBox");
-const meme = document.getElementById("meme");
-
 const oktaSignIn = new OktaSignIn({
   baseUrl: "https://dev-30200724.okta.com",
   clientId: "0oa6a3hqxlrvFP4g55d6",
@@ -59,8 +51,31 @@ function logout() {
 }
 /*END OF OKTA LOGIN SCRIPT*/
 
+/*storing elements that will be used multiple times in a varaible*/
+const jokeBtn = document.getElementById("joke-btn");
+const logoutBtn = document.getElementById("logout");
+const disclaimer = document.getElementById("psw-disclaimer");
+const loginBtnContainer = document.getElementById("lgn-btn-container");
+const welcomeMessage = document.getElementById("messageBox");
+const meme = document.getElementById("meme");
+
+/*Counter for thumbs up and thumbs down*/
+const thumbsUp = document.getElementById("thumbs-up");
+const counterUp = document.getElementById("counter-like");
+const thumbsDown = document.getElementById("thumbs-down");
+const counterDown = document.getElementById("counter-dislike");
+let likeCounter = 0;
+let dislikeCounter = 0;
+
+//HIDING VOTING SECTION BEFORE THE USER HAS CLICKED ON CLICK ME
+thumbsUp.style.display = "none";
+thumbsDown.style.display = "none";
+counterUp.style.display = "none";
+counterDown.style.display = "none";
+
 /*Button click function / GET/REQUEST API / JOKES Generator*/
 jokeBtn.addEventListener("click", function () {
+  //SEND API REQUEST AFTER USER HAS CLICKED ON CLICK ME BUTTON
   const data = null;
   const xhr = new XMLHttpRequest();
   xhr.withCredentials = true;
@@ -74,15 +89,16 @@ jokeBtn.addEventListener("click", function () {
 
   xhr.send(data);
 
+  //GENERATE RANDOM JOKE THAT'S COLLECTED FROM THE API
   xhr.addEventListener("readystatechange", function () {
     if (this.readyState === this.DONE) {
       console.log(this.responseText);
       let myJSON = JSON.parse(this.responseText);
 
-      /* This is the element that will print the generated joke*/
+      //PRINT THE JOKE AT THE WEBSITE
       document.getElementById("jokes").innerHTML = myJSON.content;
 
-      /*Generate random image from Memes folder on-click!*/
+      //GENERATE RANDOM IMAGES FROM MEMES FOLDER AFTER USER CLICKS ON CLICK ME BUTTON
       let lastIndex = 0;
       randomImage();
       function randomImage() {
@@ -113,6 +129,40 @@ jokeBtn.addEventListener("click", function () {
     }
   });
 
-  //Thumbs up / thumbs down
+  //AFTER CLICK ME BUTTON, WE DISPLAY VOTING SECTION (THUMBS)
+  thumbsUp.style.display = "inline-block";
+  thumbsDown.style.display = "inline-block";
+  counterUp.style.display = "inline-block";
+  counterDown.style.display = "inline-block";
+
+  //COUNTER FOR VOTING SECTION AFTER CLICK MED BUTTON
+  dislikeCounter = 0;
+  likeCounter = 0;
+  counterDown.innerHTML = dislikeCounter;
+  counterUp.innerHTML = likeCounter;
+});
+
+//Thumbs up / thumbs down
+
+//Counter for thumbs up and thumbs down
+likeCounter = 0;
+dislikeCounter = 0;
+
+//Function is preventing the user to do more than 1 like or 1 dislike per joke
+thumbsUp.addEventListener("click", function () {
+  if (likeCounter === 0 && dislikeCounter === 0) {
+    counterUp.innerHTML = likeCounter += 1;
+  } else {
+    counterUp.innerHTML = likeCounter += 0;
+  }
+});
+
+//Function is preventing the user to do more than 1 like or 1 dislike per joke
+thumbsDown.addEventListener("click", function () {
+  if (dislikeCounter === 0 && likeCounter === 0) {
+    counterDown.innerHTML = dislikeCounter += 1;
+  } else {
+    counterDown.innerHTML = dislikeCounter += 0;
+  }
 });
 /******************************************* */
