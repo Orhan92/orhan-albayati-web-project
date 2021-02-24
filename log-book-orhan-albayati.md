@@ -1,3 +1,20 @@
+**2021-02-24** | **10:21**
+
+- Now I'm going to wrap up the last parts (see projects/issues on GitHub for more info).
+
+**_BRIEF_**
+There have been quite a few changes in this project so far. It all started with a specifikation of making a first draft of a website where there should be a landing page, a navigation bar with: "Start", "About", and "Login" button. Once the user logs in, the user should be able to see an API call on the website. So far so good.
+-I have done all these steps by now.
+-Going to make some changes regarding page theme, and also add a few more features to the website.
+
+**_LAST SESSION_**
+
+- Last session I managed to complete most of the tasks for this website.
+- There was alot of changes and edits made to the application
+- See 2021-02-23 log for more information.
+
+---
+
 **2021-02-23** | **09:00**
 
 - REMOVED old signup/login section and replaced with OKTA.
@@ -14,6 +31,8 @@
 
   - Once the user logs in I want the content to show user first- and lastname. I can only fix it to show user email.
   - I can't figure out why my background image doesn't show on GitHub Pages.
+
+---
 
 **2021-02-21** | **10:00**
 
