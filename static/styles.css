@@ -111,7 +111,7 @@ nav img {
 }
 
 #lgn-btn-container {
-  height: 65vh;
+  height: 60vh;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
@@ -125,10 +125,11 @@ nav img {
   font-size: 75%;
   outline: none;
   cursor: pointer;
+  position: relative;
 }
 
 #messageBox {
-  margin-top: 6%;
+  margin-top: 7%;
   text-align: center;
 }
 
@@ -168,12 +169,13 @@ nav img {
   height: 50vh;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: top;
   font-weight: 350;
   font-size: 90%;
-  padding: 55px 50px 20px 50px;
+  padding: 0px 50px 40px 50px;
   text-align: center;
   word-spacing: 2px;
+  position: fixed;
 }
 
 #joke-btn {
@@ -193,6 +195,7 @@ nav img {
   text-decoration: none;
   outline: none;
   cursor: pointer;
+  position: relative;
 }
 
 #joke-btn:hover,
@@ -202,10 +205,9 @@ nav img {
 
 #thumbs-up,
 #thumbs-down {
-  margin-bottom: 35vh;
   display: inline-block;
   outline: none;
-  padding-bottom: 4px;
+  padding-bottom: 40px;
   border: none;
   border-radius: 10%;
 }
@@ -234,14 +236,16 @@ nav img {
 }
 
 .vote-container {
-  height: 25vh;
+  /* height: 5vh; */
+  position: relative;
+  margin-bottom: 2%;
 }
 #meme {
-  height: 140px;
+  height: 200px;
   width: auto;
-  transition: ease-in-out 1s;
+  position: relative;
+  padding-bottom: 35px;
 }
-
 /*END OF API SECTION*******************************/
 
 /***************ABOUT SECTION******************/

@@ -87,7 +87,16 @@ jokeBtn.addEventListener("click", function () {
       randomImage();
       function randomImage() {
         let memeDir = "Memes/";
-        let memeArr = new Array("meme1.jpg", "meme2.jpg", "meme4.jpg"); //Add image path here if you add more images
+        let memeArr = new Array( //Add image path here if you add more images
+          "meme.jpg",
+          "meme1.jpg",
+          "meme2.jpg",
+          "meme3.jpg",
+          "meme4.jpg",
+          "meme5.jpg",
+          "meme6.jpg",
+          "meme7.jpg"
+        );
         let memeIndex = 0;
 
         if (memeArr.length > 1) {
