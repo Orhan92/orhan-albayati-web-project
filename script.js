@@ -7,6 +7,7 @@ const logoutBtn = document.getElementById("logout");
 const disclaimer = document.getElementById("psw-disclaimer");
 const loginBtnContainer = document.getElementById("lgn-btn-container");
 const welcomeMessage = document.getElementById("messageBox");
+const meme = document.getElementById("meme");
 
 const oktaSignIn = new OktaSignIn({
   baseUrl: "https://dev-30200724.okta.com",
@@ -25,6 +26,7 @@ oktaSignIn.authClient.token.getUserInfo().then(
     loginBtnContainer.style.display = "flex";
     disclaimer.style.display = "none";
     jokeBtn.style.display = "block";
+    meme.style.display = "none";
   },
   function (error) {
     oktaSignIn
@@ -42,6 +44,7 @@ oktaSignIn.authClient.token.getUserInfo().then(
         loginBtnContainer.style.display = "flex";
         disclaimer.style.display = "none";
         jokeBtn.style.display = "block";
+        meme.style.display = "none";
       })
       .catch(function (err) {
         console.error(err);
@@ -78,6 +81,26 @@ jokeBtn.addEventListener("click", function () {
 
       /* This is the element that will print the generated joke*/
       document.getElementById("jokes").innerHTML = myJSON.content;
+
+      /*Generate random image from Memes folder on-click!*/
+      let lastIndex = 0;
+      randomImage();
+      function randomImage() {
+        let memeDir = "Memes/";
+        let memeArr = new Array("meme1.jpg", "meme2.jpg", "meme4.jpg"); //Add image path here if you add more images
+        let memeIndex = 0;
+
+        if (memeArr.length > 1) {
+          while (memeIndex === lastIndex) {
+            memeIndex = Math.floor(Math.random() * memeArr.length);
+          }
+          lastIndex = memeIndex;
+        }
+        let memePath = memeDir + memeArr[memeIndex];
+        meme.src = memePath;
+        meme.alt = memeArr[memeIndex];
+        meme.style.display = "block";
+      }
     }
   });
 });
