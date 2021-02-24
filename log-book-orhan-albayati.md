@@ -5,6 +5,7 @@
 - Added random image generator based on click. The images are randomized from dir: Memes/
 - Added animation to the image on click, unfortunately this only works at the first click (NEED TO FIX THIS)
 - Removed counter from voting.
+- Added animation to meme images, voting thumbs and joke text.
 
   **_BRIEF_**
 
