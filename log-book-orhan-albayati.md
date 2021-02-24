@@ -3,19 +3,20 @@
 - Now I'm going to wrap up the last parts (see projects/issues on GitHub for more info).
 - Added upvote and downvote joke and a counter to them with a blue color just to not confuse red and green to colorblind people
 - Added random image generator based on click. The images are randomized from dir: Memes/
+- Added animation to the image on click, unfortunately this only works at the first click (NEED TO FIX THIS)
 
-**_BRIEF_**
+  **_BRIEF_**
 
-- There have been quite a few changes in this project so far. It all started with a specifikation of making a first draft of a website where there should be a landing page, a navigation bar with: "Start", "About", and "Login" button. Once the user logs in, the user should be able to see an API call on the website. So far so good. I should also add that It wasnt any problem to have the Login / logout section in the navbar, but I chose to have those buttons outside of it.
-- I have done all these steps by now.
-- Going to make some changes regarding page theme, and also add a few more features to the website.
-- I Have already hosted this website on GitHub Pages, OKTA signin included. But there was alot of bugs there (like background image not being read), so I decided to keep my webpage local for now.
+  - There have been quite a few changes in this project so far. It all started with a specifikation of making a first draft of a website where there should be a landing page, a navigation bar with: "Start", "About", and "Login" button. Once the user logs in, the user should be able to see an API call on the website. So far so good. I should also add that It wasnt any problem to have the Login / logout section in the navbar, but I chose to have those buttons outside of it.
+  - I have done all these steps by now.
+  - Going to make some changes regarding page theme, and also add a few more features to the website.
+  - I Have already hosted this website on GitHub Pages, OKTA signin included. But there was alot of bugs there (like background image not being read), so I decided to keep my webpage local for now.
 
-**_LAST SESSION_**
+  **_LAST SESSION_**
 
-- Last session I managed to complete most of the tasks for this website.
-- There was alot of changes and edits made to the application
-- See 2021-02-23 log for more information.
+  - Last session I managed to complete most of the tasks for this website.
+  - There was alot of changes and edits made to the application
+  - See 2021-02-23 log for more information.
 
 ---
 
