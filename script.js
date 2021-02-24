@@ -57,7 +57,7 @@ const logoutBtn = document.getElementById("logout");
 const disclaimer = document.getElementById("psw-disclaimer");
 const loginBtnContainer = document.getElementById("lgn-btn-container");
 const welcomeMessage = document.getElementById("messageBox");
-const meme = document.getElementById("meme");
+const meme = document.querySelector(".meme");
 
 //VARIABLES TO SELECT ELEMENTS FOR VOTING SECTION (THUMBS)
 const thumbsUp = document.getElementById("thumbs-up");
@@ -118,9 +118,12 @@ jokeBtn.addEventListener("click", function () {
         meme.style.display = "block";
       }
     }
+    //We toggle animation on meme image
+    document.querySelector(".meme").classList.toggle("change");
   });
+  //When we jump out of function we remove the animation in order to toggle it again once the user generates a new joke
+  document.querySelector(".meme").classList.remove("change");
 
-  function Animate() {}
   //AFTER CLICK ME BUTTON, WE DISPLAY VOTING SECTION (THUMBS)
   thumbsUp.style.display = "inline-block";
   thumbsDown.style.display = "inline-block";

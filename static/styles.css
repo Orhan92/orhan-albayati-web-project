@@ -222,13 +222,13 @@ nav img {
   cursor: pointer;
 }
 
-#counter-like,
+/* #counter-like,
 #counter-dislike {
   display: inline-block;
   font-size: 80%;
   font-weight: 400;
   animation: meme 1.5s ease-in-out;
-}
+} */
 
 /*Blue color to not confuse colorblind people*/
 #counter-like {
@@ -244,11 +244,13 @@ nav img {
   margin-bottom: 2%;
 }
 
-#meme {
+.meme {
   height: 200px;
   width: auto;
   position: relative;
   padding-bottom: 35px;
+}
+.meme.change {
   animation: meme 1.5s ease-in-out;
 }
 /*KEY FRAMES ATTACHED TO LIKE/DISLIKE-COUNTER AND THUMBSUP/THUMBSDOWN BUTTONS AND THE API JOKE PARAGRAPH*/
