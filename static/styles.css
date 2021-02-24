@@ -161,7 +161,7 @@ nav img {
 }
 /*END OF OKTA STYLING***********************************************/
 
-/*API SECTION **********************************************/
+/*API SECTION / JOKES **********************************************/
 
 #jokes {
   height: 50vh;
@@ -197,7 +197,7 @@ nav img {
 #joke-btn:active {
   background-color: #0073b2;
 }
-/*END OF API SECTION*/
+/*END OF API SECTION*******************************/
 
 /***************ABOUT SECTION******************/
 /*Author Image / Author info*/
