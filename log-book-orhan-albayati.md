@@ -4,6 +4,7 @@
 - Added upvote and downvote joke and a counter to them with a blue color just to not confuse red and green to colorblind people
 - Added random image generator based on click. The images are randomized from dir: Memes/
 - Added animation to the image on click, unfortunately this only works at the first click (NEED TO FIX THIS)
+- Removed counter from voting.
 
   **_BRIEF_**
 
