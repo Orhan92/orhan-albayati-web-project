@@ -118,19 +118,24 @@ jokeBtn.addEventListener("click", function () {
         meme.style.display = "block";
       }
     }
-    //We toggle animation on meme image
+
+    //We toggle animation on meme image AND jokes paragraph from API
     document.querySelector(".meme").classList.toggle("change");
+    document.querySelector(".jokes-class").classList.toggle("change");
+    document.querySelector(".animation-btn1").classList.toggle("change");
+    document.querySelector(".animation-btn2").classList.toggle("change");
+
+    //SHOWS VOTING BUTTONS AFTER USER GENERATES A NEW JOKE ("CLICK ME!")
+    thumbsDown.style.visibility = "visible";
+    thumbsUp.style.visibility = "visible";
+    thumbsUp.style.display = "inline-block";
+    thumbsDown.style.display = "inline-block";
   });
-  //When we jump out of function we remove the animation in order to toggle it again once the user generates a new joke
+  //When we jump out of function we remove the animation in order to toggle it again once the user generates a new joke ("CLICK ME!")
   document.querySelector(".meme").classList.remove("change");
-
-  //AFTER CLICK ME BUTTON, WE DISPLAY VOTING SECTION (THUMBS)
-  thumbsUp.style.display = "inline-block";
-  thumbsDown.style.display = "inline-block";
-
-  //SHOWS VOTING BUTTONS AFTER USER GENERATES A NEW JOKE ("CLICK ME!")
-  thumbsDown.style.visibility = "visible";
-  thumbsUp.style.visibility = "visible";
+  document.querySelector(".jokes-class").classList.remove("change");
+  document.querySelector(".animation-btn1").classList.remove("change");
+  document.querySelector(".animation-btn2").classList.remove("change");
 });
 
 //Thumbs up / thumbs down

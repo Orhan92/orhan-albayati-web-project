@@ -66,11 +66,11 @@ nav img {
 
 /*Left borderbox on landing page*/
 .border-box {
-  background-color: rgb(240, 240, 240);
+  background-color: #fff;
   height: 80vh;
   color: rgb(26, 26, 26);
   margin-top: 7%;
-  opacity: 0.9;
+  opacity: 0.8;
   overflow-y: auto;
   border-radius: 15px;
   box-shadow: 1px 0px 5px 0px #e67b3a;
@@ -79,11 +79,11 @@ nav img {
 
 /*Right borderbox on landing page*/
 .border-box1 {
-  background-color: rgb(240, 240, 240);
+  background-color: #fff;
   height: 80vh;
   color: rgb(26, 26, 26);
   margin-top: 7%;
-  opacity: 0.9;
+  opacity: 0.8;
   overflow-y: none;
   border-radius: 15px;
   box-shadow: 1px 0px 5px 0px #e67b3a; /*Comment back to get orange border*/
@@ -170,13 +170,15 @@ nav img {
   flex-direction: column;
   justify-content: center;
   align-items: top;
-  font-weight: 350;
+  font-weight: 400;
   font-size: 90%;
   padding: 0px 50px 40px 50px;
   text-align: center;
   word-spacing: 2px;
   position: fixed;
-  animation: meme 1.5s ease-in-out;
+}
+#jokes.change {
+  animation: meme 1s ease-in;
 }
 
 #joke-btn {
@@ -206,12 +208,20 @@ nav img {
 
 #thumbs-up,
 #thumbs-down {
+  background-color: #fff;
   display: inline-block;
   outline: none;
   margin-bottom: 40px;
   border: none;
   border-radius: 10%;
-  animation: meme 1.5s ease-in-out;
+  font-size: 150%;
+}
+
+#thumbs-up.change {
+  animation: meme 2.5s ease-in;
+}
+#thumbs-down.change {
+  animation: meme 2.5s ease-in;
 }
 
 #thumbs-up:hover,
@@ -220,22 +230,6 @@ nav img {
 #thumbs-down:active {
   background-color: #5050501e;
   cursor: pointer;
-}
-
-/* #counter-like,
-#counter-dislike {
-  display: inline-block;
-  font-size: 80%;
-  font-weight: 400;
-  animation: meme 1.5s ease-in-out;
-} */
-
-/*Blue color to not confuse colorblind people*/
-#counter-like {
-  color: #007dc1;
-}
-#counter-dislike {
-  color: #007dc1;
 }
 
 .vote-container {
@@ -251,7 +245,7 @@ nav img {
   padding-bottom: 35px;
 }
 .meme.change {
-  animation: meme 1.5s ease-in-out;
+  animation: memeImg 3s ease-out infinite;
 }
 /*KEY FRAMES ATTACHED TO LIKE/DISLIKE-COUNTER AND THUMBSUP/THUMBSDOWN BUTTONS AND THE API JOKE PARAGRAPH*/
 @keyframes meme {
@@ -266,6 +260,21 @@ nav img {
   }
   75% {
     opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes memeImg {
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
   }
   100% {
     opacity: 1;
