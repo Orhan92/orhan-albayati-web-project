@@ -13,12 +13,12 @@ const oktaSignIn = new OktaSignIn({
 
 oktaSignIn.authClient.token.getUserInfo().then(
   function (user) {
-    welcomeMessage.innerHTML = user.userData.profile.name; //shows the users name when logged in.
+    welcomeMessage.innerHTML = user.userData.profile.name; //SHOWS THE LOGGED IN USERNAME.
     logoutBtn.style.display = "block"; //Logout button
-    loginBtnContainer.style.display = "flex";
-    disclaimer.style.display = "none";
     jokeBtn.style.display = "block";
+    disclaimer.style.display = "none";
     meme.style.display = "none";
+    loginBtnContainer.style.display = "flex";
   },
   function (error) {
     oktaSignIn
@@ -51,7 +51,7 @@ function logout() {
 }
 /*END OF OKTA LOGIN SCRIPT*/
 
-/*storing elements that will be used multiple times in a varaible*/
+//STORING ELEMENTS INSIDE VARIABLES THAT WILL BE USED MULTIPLE TIMES
 const jokeBtn = document.getElementById("joke-btn");
 const logoutBtn = document.getElementById("logout");
 const disclaimer = document.getElementById("psw-disclaimer");
