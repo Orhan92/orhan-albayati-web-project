@@ -59,19 +59,13 @@ const loginBtnContainer = document.getElementById("lgn-btn-container");
 const welcomeMessage = document.getElementById("messageBox");
 const meme = document.getElementById("meme");
 
-/*Counter for thumbs up and thumbs down*/
+//VARIABLES TO SELECT ELEMENTS FOR VOTING SECTION (THUMBS)
 const thumbsUp = document.getElementById("thumbs-up");
-const counterUp = document.getElementById("counter-like");
 const thumbsDown = document.getElementById("thumbs-down");
-const counterDown = document.getElementById("counter-dislike");
-let likeCounter = 0;
-let dislikeCounter = 0;
 
 //HIDING VOTING SECTION BEFORE THE USER HAS CLICKED ON CLICK ME
 thumbsUp.style.display = "none";
 thumbsDown.style.display = "none";
-counterUp.style.display = "none";
-counterDown.style.display = "none";
 
 /*FUNCTION FOR CLICK ME BUTTON*/
 jokeBtn.addEventListener("click", function () {
@@ -126,40 +120,26 @@ jokeBtn.addEventListener("click", function () {
     }
   });
 
+  function Animate() {}
   //AFTER CLICK ME BUTTON, WE DISPLAY VOTING SECTION (THUMBS)
   thumbsUp.style.display = "inline-block";
   thumbsDown.style.display = "inline-block";
-  counterUp.style.display = "inline-block";
-  counterDown.style.display = "inline-block";
 
-  //COUNTER FOR VOTING SECTION AFTER CLICK MED BUTTON
-  dislikeCounter = 0;
-  likeCounter = 0;
-  counterDown.innerHTML = dislikeCounter;
-  counterUp.innerHTML = likeCounter;
+  //SHOWS VOTING BUTTONS AFTER USER GENERATES A NEW JOKE ("CLICK ME!")
+  thumbsDown.style.visibility = "visible";
+  thumbsUp.style.visibility = "visible";
 });
 
 //Thumbs up / thumbs down
-
-//Counter for thumbs up and thumbs down
-likeCounter = 0;
-dislikeCounter = 0;
-
 //Function is preventing the user to do more than 1 like or 1 dislike per joke
 thumbsUp.addEventListener("click", function () {
-  if (likeCounter === 0 && dislikeCounter === 0) {
-    counterUp.innerHTML = likeCounter += 1;
-  } else {
-    counterUp.innerHTML = likeCounter += 0;
-  }
+  thumbsDown.style.visibility = "hidden";
+  thumbsUp.style.visibility = "hidden";
 });
 
 //Function is preventing the user to do more than 1 like or 1 dislike per joke
 thumbsDown.addEventListener("click", function () {
-  if (dislikeCounter === 0 && likeCounter === 0) {
-    counterDown.innerHTML = dislikeCounter += 1;
-  } else {
-    counterDown.innerHTML = dislikeCounter += 0;
-  }
+  thumbsDown.style.visibility = "hidden";
+  thumbsUp.style.visibility = "hidden";
 });
 /******************************************* */
