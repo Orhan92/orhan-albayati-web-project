@@ -124,6 +124,7 @@ nav img {
   padding: 3px 20px;
   font-size: 75%;
   outline: none;
+  cursor: pointer;
 }
 
 #messageBox {
@@ -154,9 +155,9 @@ nav img {
   text-align: center;
   font-family: "Lato", sans-serif;
   margin: 4% 10%;
-  font-weight: 340;
+  font-weight: 350;
   font-style: italic;
-  font-size: 70%;
+  font-size: 68%;
   letter-spacing: 2px;
 }
 /*END OF OKTA STYLING***********************************************/
@@ -191,12 +192,47 @@ nav img {
   border-radius: 10px;
   text-decoration: none;
   outline: none;
+  cursor: pointer;
 }
 
 #joke-btn:hover,
 #joke-btn:active {
   background-color: #0073b2;
 }
+
+#thumbs-up,
+#thumbs-down {
+  margin-bottom: 35vh;
+  display: inline-block;
+  outline: none;
+  padding-bottom: 4px;
+  border: none;
+  border-radius: 10%;
+}
+
+#thumbs-up:hover,
+#thumbs-down:hover,
+#thumbs-up:active,
+#thumbs-down:active {
+  background-color: #5050501e;
+  cursor: pointer;
+}
+
+#counter-like,
+#counter-dislike {
+  display: inline-block;
+  font-size: 80%;
+  font-weight: 400;
+}
+
+/*Blue color to not confuse colorblind people*/
+#counter-like {
+  color: #007dc1;
+}
+#counter-dislike {
+  color: #007dc1;
+}
+
 /*END OF API SECTION*******************************/
 
 /***************ABOUT SECTION******************/

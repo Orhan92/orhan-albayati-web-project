@@ -1,6 +1,13 @@
 "use strict";
 
 /*OKTA LOGIN SCRIPT*/
+/*storing elements that will be used multiple times in a varaible*/
+const jokeBtn = document.getElementById("joke-btn");
+const logoutBtn = document.getElementById("logout");
+const disclaimer = document.getElementById("psw-disclaimer");
+const loginBtnContainer = document.getElementById("lgn-btn-container");
+const welcomeMessage = document.getElementById("messageBox");
+
 const oktaSignIn = new OktaSignIn({
   baseUrl: "https://dev-30200724.okta.com",
   clientId: "0oa6a3hqxlrvFP4g55d6",
@@ -13,28 +20,28 @@ const oktaSignIn = new OktaSignIn({
 
 oktaSignIn.authClient.token.getUserInfo().then(
   function (user) {
-    document.getElementById("messageBox").innerHTML =
-      user.userData.profile.name;
-    document.getElementById("logout").style.display = "block"; //Logout button
-    document.getElementById("lgn-btn-container").style.display = "flex";
-    document.getElementById("psw-disclaimer").style.display = "none";
-    document.getElementById("joke-btn").style.display = "block";
+    welcomeMessage.innerHTML = user.userData.profile.name; //shows the users name when logged in.
+    logoutBtn.style.display = "block"; //Logout button
+    loginBtnContainer.style.display = "flex";
+    disclaimer.style.display = "none";
+    jokeBtn.style.display = "block";
   },
   function (error) {
     oktaSignIn
       .showSignInToGetTokens({
         el: "#okta-login-container",
       })
+
+      //
       .then(function (tokens) {
         oktaSignIn.authClient.tokenManager.setTokens(tokens);
         oktaSignIn.remove();
 
-        // const idToken = tokens.idToken; //This one is used to print out email token.
-        document.getElementById("messageBox").innerHTML = "Welcome!";
-        document.getElementById("logout").style.display = "block";
-        document.getElementById("lgn-btn-container").style.display = "flex";
-        document.getElementById("psw-disclaimer").style.display = "none";
-        document.getElementById("joke-btn").style.display = "block";
+        welcomeMessage.innerHTML = "Welcome!";
+        logoutBtn.style.display = "block";
+        loginBtnContainer.style.display = "flex";
+        disclaimer.style.display = "none";
+        jokeBtn.style.display = "block";
       })
       .catch(function (err) {
         console.error(err);
@@ -43,14 +50,14 @@ oktaSignIn.authClient.token.getUserInfo().then(
 );
 
 function logout() {
-  document.getElementById("logout").style.display = "block";
+  logoutBtn.style.display = "block";
   oktaSignIn.authClient.signOut();
   location.reload();
 }
 /*END OF OKTA LOGIN SCRIPT*/
 
-/*JOKES Generator And GET API*/
-document.getElementById("joke-btn").addEventListener("click", function () {
+/*Button click function / GET/REQUEST API / JOKES Generator*/
+jokeBtn.addEventListener("click", function () {
   const data = null;
   const xhr = new XMLHttpRequest();
   xhr.withCredentials = true;
@@ -69,7 +76,7 @@ document.getElementById("joke-btn").addEventListener("click", function () {
       console.log(this.responseText);
       let myJSON = JSON.parse(this.responseText);
 
-      /* FIX THIS FUNCTION TO ACTUALLY GENERATE A NEW JOKE EACH CLICK*/
+      /* This is the element that will print the generated joke*/
       document.getElementById("jokes").innerHTML = myJSON.content;
     }
   });

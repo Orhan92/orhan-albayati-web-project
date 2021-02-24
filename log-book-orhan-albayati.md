@@ -1,6 +1,7 @@
 **2021-02-24** | **10:21**
 
 - Now I'm going to wrap up the last parts (see projects/issues on GitHub for more info).
+- Added upvote and downvote joke and a counter to them with a blue color just to not confuse red and green to colorblind people
 
 **_BRIEF_**
 
