@@ -73,20 +73,18 @@ thumbsDown.style.display = "none";
 counterUp.style.display = "none";
 counterDown.style.display = "none";
 
-/*Button click function / GET/REQUEST API / JOKES Generator*/
+/*FUNCTION FOR CLICK ME BUTTON*/
 jokeBtn.addEventListener("click", function () {
   //SEND API REQUEST AFTER USER HAS CLICKED ON CLICK ME BUTTON
   const data = null;
   const xhr = new XMLHttpRequest();
   xhr.withCredentials = true;
-
   xhr.open("GET", "https://joke3.p.rapidapi.com/v1/joke");
   xhr.setRequestHeader(
     "x-rapidapi-key",
     "438ce6f496msh1291cc6153e5c5ap10502bjsn062ad0fe3176"
   );
   xhr.setRequestHeader("x-rapidapi-host", "joke3.p.rapidapi.com");
-
   xhr.send(data);
 
   //GENERATE RANDOM JOKE THAT'S COLLECTED FROM THE API
@@ -113,7 +111,6 @@ jokeBtn.addEventListener("click", function () {
           "meme6.jpg",
           "meme7.jpg"
         );
-
         let memeIndex = 0;
         if (memeArr.length > 1) {
           while (memeIndex === lastIndex) {
