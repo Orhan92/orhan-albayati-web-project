@@ -54,16 +54,21 @@ function logout() {
 //**************************
 
 //STORING ELEMENTS INSIDE VARIABLES THAT WILL BE USED MULTIPLE TIMES
-const jokeBtn = document.getElementById("joke-btn");
-const logoutBtn = document.getElementById("logout");
-const disclaimer = document.getElementById("psw-disclaimer");
-const loginBtnContainer = document.getElementById("lgn-btn-container");
-const welcomeMessage = document.getElementById("messageBox");
-const meme = document.querySelector(".meme");
+const jokeBtn = document.getElementById("joke-btn"); //Click me button
+const logoutBtn = document.getElementById("logout"); //Logout button (okta)
+const disclaimer = document.getElementById("psw-disclaimer"); //Password Disclaimer
+const loginBtnContainer = document.getElementById("lgn-btn-container"); //Login button
+const welcomeMessage = document.getElementById("messageBox"); //Display Username
 
 //VARIABLES TO SELECT ELEMENTS FOR VOTING SECTION (THUMBS)
-const thumbsUp = document.getElementById("thumbs-up");
-const thumbsDown = document.getElementById("thumbs-down");
+const thumbsUp = document.getElementById("thumbs-up"); //Thumbs up symbol
+const thumbsDown = document.getElementById("thumbs-down"); //Thumbs down symbol
+
+//VARIABLES TO SELECT API JOKE, MEME IMG, VOTiNG BUTTON ELEMENTS (FOR ANIMATION)
+const meme = document.querySelector(".meme"); //Meme image
+const APIJokes = document.querySelector(".jokes-class"); //Jokes <p>
+const upVote = document.querySelector(".animation-btn1"); //Thumbs up animation
+const downVote = document.querySelector(".animation-btn2"); //Thumbs down animation
 
 //HIDING VOTING SECTION BEFORE THE USER HAS CLICKED ON CLICK ME
 thumbsUp.style.display = "none";
@@ -126,10 +131,10 @@ jokeBtn.addEventListener("click", function () {
     //*****************************
 
     //We toggle animation on meme image AND jokes paragraph from API
-    document.querySelector(".meme").classList.toggle("change");
-    document.querySelector(".jokes-class").classList.toggle("change");
-    document.querySelector(".animation-btn1").classList.toggle("change");
-    document.querySelector(".animation-btn2").classList.toggle("change");
+    meme.classList.toggle("change");
+    APIJokes.classList.toggle("change");
+    upVote.classList.toggle("change");
+    downVote.classList.toggle("change");
 
     //SHOWS VOTING BUTTONS AFTER USER GENERATES A NEW JOKE ("CLICK ME!")
     thumbsDown.style.visibility = "visible";
@@ -137,12 +142,13 @@ jokeBtn.addEventListener("click", function () {
     thumbsUp.style.display = "inline-block";
     thumbsDown.style.display = "inline-block";
   });
-  //When we jump out of function we remove the animation in order to toggle it again once the user generates a new joke ("CLICK ME!")
-  document.querySelector(".meme").classList.remove("change");
-  document.querySelector(".jokes-class").classList.remove("change");
-  document.querySelector(".animation-btn1").classList.remove("change");
-  document.querySelector(".animation-btn2").classList.remove("change");
+  //We remove the animation at the end of function in order to toggle it again when the user generates a new joke ("CLICK ME!")-btn
+  meme.classList.remove("change");
+  APIJokes.classList.remove("change");
+  upVote.classList.remove("change");
+  downVote.classList.remove("change");
 });
+/*********************************************************************/
 
 //Thumbs up / thumbs down function
 //Function is preventing the user to do more than 1 like or 1 dislike per joke
@@ -156,4 +162,3 @@ thumbsDown.addEventListener("click", function () {
   thumbsDown.style.visibility = "hidden";
   thumbsUp.style.visibility = "hidden";
 });
-/******************************************* */
