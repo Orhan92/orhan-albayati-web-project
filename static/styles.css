@@ -94,7 +94,7 @@ nav img {
 .border-box h3 {
   text-align: center;
   font-style: italic;
-  padding: 60px 50px 1px 50px;
+  padding: 60px 50px 0px 50px;
 }
 
 .border-box-content {
@@ -172,7 +172,7 @@ nav img {
   align-items: top;
   font-weight: 400;
   font-size: 90%;
-  padding: 40px 50px 40px 50px;
+  padding: 50px 50px 40px 50px;
   text-align: center;
   word-spacing: 2px;
   position: relative;

@@ -70,23 +70,16 @@
   }
 }
 
-@media only screen and (max-width: 380px) {
-  .author-name {
-    font-size: 60%;
-    margin-bottom: 2%;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .author-name {
-    font-size: 80%;
-    margin-bottom: 2%;
-  }
-}
-
-@media only screen and (max-width: 380px) {
+/*PSW-DISCLAIMER*/
+/* @media only screen and (max-width: 1080px) {
   #psw-disclaimer {
     font-size: 60%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #psw-disclaimer {
+    font-size: 40%;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -94,25 +87,40 @@
     font-size: 50%;
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 380px) {
   #psw-disclaimer {
-    font-size: 20%;
+    font-size: 40%;
+  }
+} */
+
+/*CONTENT INSIDE LEFT BOX LANDING PAGE*/
+@media only screen and (max-width: 411px) {
+  .border-box-content.content-queries {
+    font-size: 55%;
   }
 }
-@media only screen and (max-width: 1080px) {
-  #psw-disclaimer {
-    font-size: 60%;
+@media only screen and (max-width: 411px) {
+  .author-name {
+    font-size: 50%;
+    margin-bottom: 2%;
   }
 }
 
-@media only screen and (max-width: 480px) {
-  .border-box-content {
-    font-size: 80%;
+@media only screen and (max-width: 411px) {
+  #psw-disclaimer {
+    font-size: 38%;
   }
 }
-@media only screen and (max-width: 1050px) {
-  .border-box-content {
-    font-size: 60%;
+
+@media only screen and (max-width: 360px) {
+  .border-box-content.content-queries {
+    font-size: 40%;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .author-name {
+    font-size: 50%;
+    margin-bottom: 2%;
   }
 }
 
@@ -390,4 +398,4 @@
     margin-top: 4%;
   }
 }
-/*END OF QUERIES FOR LOGGED IN SECTION*/
+/*END OF VOTING THUMBS / MEME AND JOKE PARAGRAPH*/
