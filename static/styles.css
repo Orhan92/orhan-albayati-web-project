@@ -86,7 +86,7 @@ nav img {
   opacity: 0.8;
   overflow-y: none;
   border-radius: 15px;
-  box-shadow: 1px 0px 5px 0px #e67b3a; /*Comment back to get orange border*/
+  box-shadow: 1px 0px 5px 0px #e67b3a;
   letter-spacing: 1px;
   overflow-y: auto;
 }
@@ -164,7 +164,6 @@ nav img {
 /*END OF OKTA STYLING***********************************************/
 
 /*API SECTION / JOKES **********************************************/
-
 #jokes {
   height: 50vh;
   flex-direction: column;
@@ -233,7 +232,6 @@ nav img {
 }
 
 .vote-container {
-  /* height: 5vh; */
   position: relative;
   margin-bottom: 2%;
 }
@@ -247,7 +245,7 @@ nav img {
 .meme.change {
   animation: memeImg 3s ease-out infinite;
 }
-/*KEY FRAMES ATTACHED TO LIKE/DISLIKE-COUNTER AND THUMBSUP/THUMBSDOWN BUTTONS AND THE API JOKE PARAGRAPH*/
+/*KEY FRAMES ATTACHED THUMBSUP/THUMBSDOWN BUTTONS, MEME IMG AND THE API JOKE PARAGRAPH*/
 @keyframes meme {
   0% {
     opacity: 0;

@@ -29,6 +29,7 @@
 }
 
 /*QUERYS FOR BOX CONTENTS ON LANDING PAGE (LEFT BOX)*/
+
 @media only screen and (max-width: 480px) {
   .border-box-content {
     font-size: 80%;
@@ -39,3 +40,10 @@
     font-size: 60%;
   }
 }
+
+/*Queries for login section*/
+/* @media only screen and (max-width: 380px) {
+  .meme-img.meme {
+    width: 50px;
+  }
+} */

@@ -49,7 +49,9 @@ function logout() {
   oktaSignIn.authClient.signOut();
   location.reload();
 }
+//**************************
 /*END OF OKTA LOGIN SCRIPT*/
+//**************************
 
 //STORING ELEMENTS INSIDE VARIABLES THAT WILL BE USED MULTIPLE TIMES
 const jokeBtn = document.getElementById("joke-btn");
@@ -67,7 +69,9 @@ const thumbsDown = document.getElementById("thumbs-down");
 thumbsUp.style.display = "none";
 thumbsDown.style.display = "none";
 
+//*****************************
 /*FUNCTION FOR CLICK ME BUTTON*/
+//*****************************
 jokeBtn.addEventListener("click", function () {
   //SEND API REQUEST AFTER USER HAS CLICKED ON CLICK ME BUTTON
   const data = null;
@@ -89,6 +93,7 @@ jokeBtn.addEventListener("click", function () {
 
       //PRINT THE JOKE AT THE WEBSITE
       document.getElementById("jokes").innerHTML = myJSON.content;
+      //*****************************
 
       //GENERATE RANDOM IMAGES FROM MEMES FOLDER AFTER USER CLICKS ON CLICK ME BUTTON
       let lastIndex = 0;
@@ -118,6 +123,7 @@ jokeBtn.addEventListener("click", function () {
         meme.style.display = "block";
       }
     }
+    //*****************************
 
     //We toggle animation on meme image AND jokes paragraph from API
     document.querySelector(".meme").classList.toggle("change");
@@ -138,7 +144,7 @@ jokeBtn.addEventListener("click", function () {
   document.querySelector(".animation-btn2").classList.remove("change");
 });
 
-//Thumbs up / thumbs down
+//Thumbs up / thumbs down function
 //Function is preventing the user to do more than 1 like or 1 dislike per joke
 thumbsUp.addEventListener("click", function () {
   thumbsDown.style.visibility = "hidden";
