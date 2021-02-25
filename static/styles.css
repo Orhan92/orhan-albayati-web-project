@@ -118,14 +118,15 @@ nav img {
 }
 
 #logout {
-  width: 20%;
+  width: 30%;
   font-weight: 400;
   border-radius: 10px;
-  padding: 3px 20px;
-  font-size: 80%;
+  padding: 5px 20px;
+  font-size: 70%;
   outline: none;
   cursor: pointer;
   position: relative;
+  text-align: center;
 }
 
 #messageBox {
@@ -171,10 +172,10 @@ nav img {
   align-items: top;
   font-weight: 400;
   font-size: 90%;
-  padding: 0px 50px 40px 50px;
+  padding: 40px 50px 40px 50px;
   text-align: center;
   word-spacing: 2px;
-  position: fixed;
+  position: relative;
 }
 #jokes.change {
   animation: meme 1s ease-in;
@@ -186,15 +187,16 @@ nav img {
   justify-content: center;
   align-items: center;
   font-weight: 400;
-  font-size: 75%;
+  font-size: 70%;
   padding: 15px 20px;
   text-align: center;
-  width: 20%;
+  width: 30%;
   margin-bottom: 3%;
   background-color: #007dc1;
   color: #fff;
   border-radius: 10px;
   text-decoration: none;
+  text-align: center;
   outline: none;
   cursor: pointer;
   position: relative;

@@ -78,6 +78,7 @@
             text-align: center;
             margin-right: 4%;
           "
+          class="author-name"
         >
           <br /><br />- Orhan Albayati (Webmaster and Creator)
         </p>
@@ -91,10 +92,11 @@
         <div id="messageBox" class="jumbotron"></div>
         <!-- where the sign-in form will be displayed -->
         <div id="okta-login-container"></div>
-        <div id="lgn-btn-container" style="display: none">
+        <div id="lgn-btn-container" class="jokes-class" style="display: none">
           <p id="jokes" class="jokes-class">
             Press on "Click me!" button to see what happens
           </p>
+
           <div>
             <img alt="" class="meme-img meme" />
           </div>
@@ -114,7 +116,9 @@
               👎
             </button>
           </div>
-          <button id="joke-btn" style="display: none">Click me!</button>
+          <button id="joke-btn" style="display: none" class="click-me-btn">
+            Click me!
+          </button>
           <button
             id="logout"
             class="button"

@@ -4,37 +4,106 @@
     width: 40%;
   }
 }
-/* @media screen and (max-width: 380px) {
+
+@media screen and (max-width: 380px) {
   .main-nav {
-    width: 40%;
-    font-size: 2%;
-  }
-} */
-
-/*QUERYS FOR ABOUT ME PAGE*/
-@media screen and (max-width: 1160px) {
-  #dev-info-heading {
-    margin-top: 10%;
-  }
-}
-@media screen and (max-width: 1000px) {
-  #dev-info-heading {
-    margin-top: 10%;
-  }
-}
-@media screen and (max-width: 650px) {
-  #dev-info-heading {
-    margin-top: 10%;
+    font-size: 70%;
   }
 }
 
-@media screen and (max-width: 540px) {
-  #dev-info-heading {
+@media screen and (max-width: 380px) {
+  nav img {
+    height: 40px;
+  }
+}
+
+/*QUERYS FOR BOX CONTENTS ON LANDING PAGE*/
+@media only screen and (max-width: 1300px) {
+  .border-box,
+  .border-box1 {
+    margin-top: 8%;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .border-box,
+  .border-box1 {
     margin-top: 10%;
   }
 }
 
-/*QUERYS FOR BOX CONTENTS ON LANDING PAGE (LEFT BOX)*/
+@media only screen and (max-width: 850px) {
+  .border-box,
+  .border-box1 {
+    margin-top: 15%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .border-box,
+  .border-box1 {
+    margin-top: 20%;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .border-box {
+    margin-top: 25%;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .border-box {
+    margin-top: 25%;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .border-box .border-box-content {
+    font-size: 60%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .auth-content {
+    padding: 10px 42px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .author-name {
+    font-size: 60%;
+    margin-bottom: 2%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .author-name {
+    font-size: 80%;
+    margin-bottom: 2%;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  #psw-disclaimer {
+    font-size: 60%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #psw-disclaimer {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #psw-disclaimer {
+    font-size: 20%;
+  }
+}
+@media only screen and (max-width: 1080px) {
+  #psw-disclaimer {
+    font-size: 60%;
+  }
+}
 
 @media only screen and (max-width: 480px) {
   .border-box-content {
@@ -47,9 +116,278 @@
   }
 }
 
-/*Queries for login section*/
-/* @media only screen and (max-width: 380px) {
-  .meme {
-    height: 50px;
+/*QUERYS FOR ABOUT ME PAGE*/
+
+@media screen and (max-width: 480px) {
+  .interest-section {
+    font-size: 70%;
   }
-} */
+}
+
+@media screen and (max-width: 1160px) {
+  #dev-info-heading {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #dev-info-heading {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  #dev-info-heading {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #dev-info-heading {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #dev-info-heading {
+    margin-top: 0;
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #profile-img {
+    width: 150px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #profile-img {
+    width: 150px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .author-interests {
+    font-size: 70%;
+  }
+}
+
+/*LOGGED IN SECTION CONTENT*/
+/*BUTTONS LOGIN / CLICK ME*/
+@media screen and (max-width: 1208px) {
+  #joke-btn {
+    font-size: 60%;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1208px) {
+  #logout {
+    width: 30%;
+    font-size: 60%;
+  }
+}
+@media screen and (max-width: 1055px) {
+  #joke-btn {
+    font-size: 50%;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1055px) {
+  #logout {
+    font-size: 50%;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 955px) {
+  #joke-btn {
+    font-size: 45%;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 955px) {
+  #logout {
+    font-size: 45%;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 605px) {
+  #joke-btn {
+    font-size: 45%;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 605px) {
+  #logout {
+    font-size: 45%;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  #joke-btn {
+    font-size: 45%;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  #logout {
+    font-size: 45%;
+    width: 40%;
+  }
+}
+/*END OF BUTTONS LOGIN / CLICK ME*/
+
+/*VOTING THUMBS / MEME AND JOKE PARAGRAPH*/
+@media screen and (max-width: 1024px) {
+  #thumbs-up,
+  #thumbs-down {
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .meme-img.meme {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #jokes {
+    font-size: 100%;
+    padding: 15% 4% 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  #thumbs-up,
+  #thumbs-down {
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .meme-img.meme {
+    height: 200px;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #jokes {
+    font-size: 70%;
+    padding: 23% 4% 0;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #thumbs-up,
+  #thumbs-down {
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .meme-img.meme {
+    height: 140px;
+    padding-bottom: 6px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #jokes {
+    font-size: 50%;
+    padding: 26% 4% 0;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  #thumbs-up,
+  #thumbs-down {
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .meme-img.meme {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  #jokes {
+    font-size: 70%;
+    padding: 4% 4% 0;
+  }
+}
+
+@media screen and (max-width: 411px) {
+  #thumbs-up,
+  #thumbs-down {
+    font-size: 130%;
+    margin-bottom: 40%;
+  }
+}
+
+@media screen and (max-width: 411px) {
+  .meme-img.meme {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 411px) {
+  #jokes.jokes-class {
+    font-size: 70%;
+    padding: 4% 4% 0;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #thumbs-up,
+  #thumbs-down {
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .meme-img.meme {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #jokes.jokes-class {
+    font-size: 50%;
+    padding: 4% 4% 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #thumbs-up,
+  #thumbs-down {
+    font-size: 100%;
+    padding-bottom: 0;
+    margin-bottom: 20%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .meme-img.meme {
+    height: 100px;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #jokes {
+    font-size: 10px;
+    margin-top: 4%;
+  }
+}
+/*END OF QUERIES FOR LOGGED IN SECTION*/
