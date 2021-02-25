@@ -2,7 +2,7 @@
 
 - The project is basically set and done.
 - I've cleaned up code
-- Made website responsive
+- Made website responsive added media queries for every visible content on the website
 
   **_FINISHED_**
 
