@@ -2,11 +2,20 @@
 
 - The project is basically set and done.
 - I've cleaned up code
+- Commented necessary code in the project
 - Made website responsive added media queries for every visible content on the website
 
   **_FINISHED_**
 
   - The project is now finished. I have completed all sections and functionality. Note that this is a first draft and is of course possible to improve in many ways. There have been alot of issues back and forth (check issues on github), but the website is functional and fulfills it purpose now.
+
+  **_COMMENTS_**
+
+  - **CSS-QUERIES**: I know that there is way to many media queries (660 rows with code). To my defence, I had to do it this way because I didn't necessary containers for each element that I need to attach media queries to. Therefore, I had to to a query for each visual element that has to be responsive. Due to lack of time for this project I will choose not to fix this to avoid bugs in my web application. I know how to solve this problem by gathering "same type" of elements inside a container and then put queries to that container. But as mentioned, I will skip this for now due to lack of time.
+
+  - **JAVASCRIPT**: Also regarding the Script for GETTING API and showing it to the user only when the user clicks the "Click me!"-button, it might look abit messy reading that code. Therefore I have commented each section and what it belongs to. The reason to why the scripting code looks like that is because I could not find another way to actually make the application behave the way I wanted. So the only working option was to put the code together the way it is now. Unfortunately, I'm lacking time due to deadline for this first draft. If I had more time I would try to come up with a "cleaner" solution for that function. Anyways, I have commented every section of the code in script.js to make it easier to read and understand.
+
+  - **HTML**: The structure of the HTML code is showing content exactly the way I want it with help of styles.css code. Also in the HTML structure there can be many improvements, for example: working more with containers. That way it would save us alot of code in CSS and media queries. But as it is structured now, it actually works perfect (the way I want it) and therefore it is fulfilling its purpose.
 
 ---
 
