@@ -2,11 +2,11 @@
 
 - The project is basically set and done.
 - I've cleaned up code
-- What is left is to make everything responsive
+- Made website responsive
 
-  **_ISSUES_**
+  **_FINISHED_**
 
-  - My media queries is not responding (The old queries works, but when I try to apply new ones the page doesn't respond to it)
+  - The project is now finished. I have completed all sections and functionality. Note that this is a first draft and is of course possible to improve in many ways. There have been alot of issues back and forth (check issues on github), but the website is functional and fulfills it purpose now.
 
 ---
 
