@@ -1,5 +1,13 @@
 **2021-02-25** | **10:00**
 
+- The project is basically set and done.
+- I've cleaned up code
+- What is left is to make everything responsive
+
+  **_ISSUES_**
+
+  - My media queries is not responding (The old queries works, but when I try to apply new ones the page doesn't respond to it)
+
 ---
 
 **2021-02-24** | **10:21**

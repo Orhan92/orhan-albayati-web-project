@@ -4,6 +4,12 @@
     width: 40%;
   }
 }
+/* @media screen and (max-width: 380px) {
+  .main-nav {
+    width: 40%;
+    font-size: 2%;
+  }
+} */
 
 /*QUERYS FOR ABOUT ME PAGE*/
 @media screen and (max-width: 1160px) {
@@ -43,7 +49,7 @@
 
 /*Queries for login section*/
 /* @media only screen and (max-width: 380px) {
-  .meme-img.meme {
-    width: 50px;
+  .meme {
+    height: 50px;
   }
 } */
