@@ -31,7 +31,7 @@ oktaSignIn.authClient.token.getUserInfo().then(
         oktaSignIn.authClient.tokenManager.setTokens(tokens);
         oktaSignIn.remove();
 
-        welcomeMessage.innerHTML = "Welcome!";
+        welcomeMessage.innerHTML = "Logged in successfully";
         logoutBtn.style.display = "block";
         loginBtnContainer.style.display = "flex";
         disclaimer.style.display = "none";
