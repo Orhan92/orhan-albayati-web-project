@@ -303,6 +303,11 @@ nav img {
   position: relative;
 }
 
+.author-interests {
+  font-size: 75%;
+  padding: 0 50px;
+}
+
 #dev-info-heading {
   margin-top: 2%;
   font-size: 140%;
@@ -340,7 +345,7 @@ nav img {
   color: #e67b3a;
 }
 
-.author-interests {
+.author-info {
   border-top: 1px dotted #000;
   margin: 0 25px;
   margin-top: 40px;
