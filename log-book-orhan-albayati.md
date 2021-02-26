@@ -2,6 +2,13 @@
 
 - During my video blog I realized that the API I chose was under maintenance. So I had to change API provider. It wasn't hard. It also made me realize how easy it is to actually change provider which you can see in script.js (row 86-93). See comment on row 86.
 
+**_OKTA LOGIN-DETAILS_**
+
+Localhost: 8080
+
+- Username: jafar.agraba@aladdin.com
+- Password: frontend123
+
 ---
 
 **2021-02-25** | **10:00**
