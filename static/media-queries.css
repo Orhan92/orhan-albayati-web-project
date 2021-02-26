@@ -571,7 +571,7 @@
 @media screen and (max-width: 540px) {
   #jokes {
     font-size: 50%;
-    padding: 26% 4% 0;
+    padding: 10% 4% 0;
   }
 }
 
@@ -626,6 +626,12 @@
 @media screen and (max-width: 360px) {
   .meme-img.meme {
     height: 150px;
+  }
+}
+@media screen and (max-width: 375px) {
+  #jokes.jokes-class {
+    font-size: 50%;
+    padding: 4% 4% 0;
   }
 }
 

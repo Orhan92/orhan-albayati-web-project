@@ -78,26 +78,39 @@ thumbsDown.style.display = "none";
 /*FUNCTION FOR CLICK ME BUTTON*/
 //*****************************
 jokeBtn.addEventListener("click", function () {
-  //SEND API REQUEST AFTER USER HAS CLICKED ON CLICK ME BUTTON
+  //API SECTION ***************************************************************
   const data = null;
   const xhr = new XMLHttpRequest();
-  xhr.withCredentials = true;
-  xhr.open("GET", "https://joke3.p.rapidapi.com/v1/joke");
+  xhr.withCredentials = false;
+
+  //UNCOMMENT BELOW TO GET JOKES FROM DIFFERENT API
+  // xhr.open("GET", "https://joke3.p.rapidapi.com/v1/joke");
+  // xhr.setRequestHeader(
+  //   "x-rapidapi-key",
+  //   "438ce6f496msh1291cc6153e5c5ap10502bjsn062ad0fe3176"
+  // );
+  // xhr.setRequestHeader("x-rapidapi-host", "joke3.p.rapidapi.com");
+  // xhr.send(data);
+
+  xhr.open("GET", "https://geek-jokes.p.rapidapi.com/api?format=json");
   xhr.setRequestHeader(
     "x-rapidapi-key",
     "438ce6f496msh1291cc6153e5c5ap10502bjsn062ad0fe3176"
   );
-  xhr.setRequestHeader("x-rapidapi-host", "joke3.p.rapidapi.com");
+  xhr.setRequestHeader("x-rapidapi-host", "geek-jokes.p.rapidapi.com");
+
   xhr.send(data);
+  console.log(this.responseText); //To see if we get a response from API call
 
   //GENERATE RANDOM JOKE THAT'S COLLECTED FROM THE API
   xhr.addEventListener("readystatechange", function () {
     if (this.readyState === this.DONE) {
       console.log(this.responseText);
       let myJSON = JSON.parse(this.responseText);
+      // END OF API SECTION ***************************************************
 
       //PRINT THE JOKE AT THE WEBSITE
-      document.getElementById("jokes").innerHTML = myJSON.content;
+      document.getElementById("jokes").innerHTML = myJSON.joke; //.content; //change to this when using the outcommented joke API above
       //*****************************
 
       //GENERATE RANDOM IMAGES FROM MEMES FOLDER AFTER USER CLICKS ON CLICK ME BUTTON
